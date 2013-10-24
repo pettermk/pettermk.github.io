@@ -1,0 +1,101 @@
+Crashlog created at Sat Aug 18 16:42:34 +0200 2012
+
+=== MESSAGE:
+
+RuntimeError: The :imagesize filter did not write anything to the required output file, /Users/petter/Documents/Blog/tmp/binary_items/20120818-90398-1pa1d7x-0.
+
+=== COMPILATION STACK:
+
+  - [item]   /home/img/P1000723_1/ (rep small)
+
+=== BACKTRACE:
+
+  0. /Library/Ruby/Gems/1.8/gems/nanoc-3.4.0/lib/nanoc/base/result_data/item_rep.rb:354:in `filter'
+  1. /Library/Ruby/Gems/1.8/gems/nanoc-3.4.0/lib/nanoc/base/compilation/item_rep_proxy.rb:47:in `filter'
+  2. /Library/Ruby/Gems/1.8/gems/nanoc-3.4.0/lib/nanoc/base/compilation/rule_context.rb:54:in `filter'
+  3. ./Rules:27:in `load'
+  4. /Library/Ruby/Gems/1.8/gems/nanoc-3.4.0/lib/nanoc/base/compilation/rule.rb:68:in `instance_eval'
+  5. /Library/Ruby/Gems/1.8/gems/nanoc-3.4.0/lib/nanoc/base/compilation/rule.rb:68:in `apply_to'
+  6. /Library/Ruby/Gems/1.8/gems/nanoc-3.4.0/lib/nanoc/base/compilation/compiler.rb:381:in `compile_rep'
+  7. /Library/Ruby/Gems/1.8/gems/nanoc-3.4.0/lib/nanoc/base/compilation/compiler.rb:337:in `compile_reps'
+  8. /Library/Ruby/Gems/1.8/gems/nanoc-3.4.0/lib/nanoc/base/compilation/compiler.rb:330:in `loop'
+  9. /Library/Ruby/Gems/1.8/gems/nanoc-3.4.0/lib/nanoc/base/compilation/compiler.rb:330:in `compile_reps'
+  10. /Library/Ruby/Gems/1.8/gems/nanoc-3.4.0/lib/nanoc/base/compilation/compiler.rb:85:in `run'
+  11. /Library/Ruby/Gems/1.8/gems/nanoc-3.4.0/lib/nanoc/base/source_data/site.rb:57:in `compile'
+  12. /Library/Ruby/Gems/1.8/gems/nanoc-3.4.0/lib/nanoc/cli/commands/compile.rb:57:in `run'
+  13. /Library/Ruby/Gems/1.8/gems/nanoc-3.4.0/lib/nanoc/cli/command_runner.rb:14:in `call'
+  14. /Library/Ruby/Gems/1.8/gems/nanoc-3.4.0/lib/nanoc/cli/error_handler.rb:63:in `handle_while'
+  15. /Library/Ruby/Gems/1.8/gems/nanoc-3.4.0/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
+  16. /Library/Ruby/Gems/1.8/gems/nanoc-3.4.0/lib/nanoc/cli/command_runner.rb:13:in `call'
+  17. /Library/Ruby/Gems/1.8/gems/cri-2.3.0/lib/cri/command_dsl.rb:185:in `runner'
+  18. /Library/Ruby/Gems/1.8/gems/cri-2.3.0/lib/cri/command.rb:296:in `call'
+  19. /Library/Ruby/Gems/1.8/gems/cri-2.3.0/lib/cri/command.rb:296:in `run_this'
+  20. /Library/Ruby/Gems/1.8/gems/cri-2.3.0/lib/cri/command.rb:249:in `run'
+  21. /Library/Ruby/Gems/1.8/gems/cri-2.3.0/lib/cri/command.rb:262:in `run'
+  22. /Library/Ruby/Gems/1.8/gems/nanoc-3.4.0/lib/nanoc/cli.rb:47:in `run'
+  23. /Library/Ruby/Gems/1.8/gems/nanoc-3.4.0/lib/nanoc/cli/error_handler.rb:63:in `handle_while'
+  24. /Library/Ruby/Gems/1.8/gems/nanoc-3.4.0/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
+  25. /Library/Ruby/Gems/1.8/gems/nanoc-3.4.0/lib/nanoc/cli.rb:44:in `run'
+  26. /Library/Ruby/Gems/1.8/gems/nanoc-3.4.0/bin/nanoc:19
+  27. /usr/bin/nanoc:19:in `load'
+  28. /usr/bin/nanoc:19
+
+=== VERSION INFORMATION:
+
+nanoc 3.4.0 © 2007-2012 Denis Defreyne.
+Running ruby 1.8.7 (2011-12-28) on universal-darwin11.0 with RubyGems 1.8.24.
+
+=== INSTALLED GEMS:
+
+  colored 1.2
+  nanoc 3.4.0
+  rubygems-update 1.8.24
+  coderay 1.0.7
+  kramdown 0.13.7
+  rack 1.4.1
+  mime-types 1.19
+  cri 2.3.0
+
+=== ENVIRONMENT:
+
+Apple_PubSub_Socket_Render => "/tmp/launch-0XX1Mb/Render"
+Apple_Ubiquity_Message => "/tmp/launch-HV8Db4/Apple_Ubiquity_Message"
+COMMAND_MODE => "unix2003"
+DISPLAY => "/tmp/launch-xmzziI/org.x:0"
+HOME => "/Users/petter"
+LC_CTYPE => "UTF-8"
+LOGNAME => "petter"
+OLDPWD => "/Users/petter/Documents"
+PATH => "/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin"
+PWD => "/Users/petter/Documents/Blog"
+SHELL => "/bin/bash"
+SHLVL => "1"
+SSH_AUTH_SOCK => "/tmp/launch-nJy6CI/Listeners"
+SVN_EDITOR => "emacs"
+TERM => "xterm-256color"
+TERM_PROGRAM => "Apple_Terminal"
+TERM_PROGRAM_VERSION => "303.2"
+TERM_SESSION_ID => "E97B35D6-2796-428E-960F-968846A83AE3"
+TMPDIR => "/var/folders/y2/5svt57gn02g2q8t6mgksj8640000gn/T/"
+USER => "petter"
+_ => "/usr/bin/nanoc"
+__CF_USER_TEXT_ENCODING => "0x1F5:0:0"
+
+=== $LOAD_PATH:
+
+  0. /Library/Ruby/Gems/1.8/gems/nanoc-3.4.0/lib
+  1. /Library/Ruby/Gems/1.8/gems/colored-1.2/lib
+  2. /Library/Ruby/Gems/1.8/gems/cri-2.3.0/lib
+  3. /Library/Ruby/Gems/1.8/gems/nanoc-3.4.0/lib
+  4. /Library/Ruby/Gems/1.8/gems/coderay-1.0.7/lib
+  5. /Library/Ruby/Site/1.8
+  6. /Library/Ruby/Site/1.8/powerpc-darwin11.0
+  7. /Library/Ruby/Site/1.8/universal-darwin11.0
+  8. /Library/Ruby/Site
+  9. /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/vendor_ruby/1.8
+  10. /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/vendor_ruby/1.8/universal-darwin11.0
+  11. /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/vendor_ruby
+  12. /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8
+  13. /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/powerpc-darwin11.0
+  14. /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin11.0
+  15. .

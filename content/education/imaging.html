@@ -1,0 +1,26 @@
+--- 
+title: Computational Science in Imaging
+tags: [ 'numericmath', 'imageprocessing' ]
+menuitem: education
+created_at: 2 Jan 2011
+summary: "Computation Science in Imaging was a very interesting subject teaching us the causes of and remedies for image blurring."
+---
+
+Computational Science in Imaging
+================================
+
+This subject introduced me to the image deblurring problem. The problem at hand was deblurring an image which had been blurred due to linear motion while the camera shutter was open (commonly known as a shake-hand photo). Any image blur can be described by the blurring kernel or Point Spread Function ([PSF](http://en.wikipedia.org/wiki/Point_spread_function)), and if this is known one can simply deconvolve the blurred image to get the original unblurred image.
+
+Read this if that sounded greek
+-------------------------------
+The PSF for camera motion blur can best be described by a line. To understand what that means, consider the following thought experiment. If I photograph the night sky, it is completely dark except one bright shining star. As luck has it, this star, when projected onto the sensor of my camera, fills exactly one pixel somewhere at the center of the image. This pixel is completely white and assumes an RGB value of (255,255,255). That means that the recorded scene is 100% of each of the colors red, green and blue. Together that is perceived as the whitest white my computer screen can display.
+
+In a perfect world, this is a completely legible statement. In reality however, several things distort this perfection. My lens most likely introduces some level of _blur_ to this image. Such blur may assume different shapes depending on the lens, but forget about that and think of what happens if my camera moves ever so slightly while the scene is recorded?
+
+Well, you've probably heard already, this is going to cause motion blur in you image. Nothing new either, I should suppose. The cool part however begins when we accept that this line I'm recording in my camera is a perfect description of what motion my camera was subject to while recording the image.
+
+What we wanted to have was a sharp pixel of value value (255,255,255), but what we got was a straight line of 10 pixels at value (25,25,25). The lower light happens because each of the lit pixels only were lit 1/10th of the time our original perfect pixel would have been lit. 
+
+In this case we know the perfect situation, and we have the recorded "unperfect" situation. Further, I argue that there is a relationship between these two images that can be quantitatively described, and there is also a means to go back and forth between the two images by by performing som matrix arithmetic on them. Cool?
+
+This means that when the relationship between a distorted image and a clean image is known, we can perfectly reconstruct the clean image.    

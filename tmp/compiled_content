@@ -1,0 +1,4435 @@
+{:	data{$"/codestyle/{:default{:raw"ä.CodeRay {
+  background-color: #FFF;
+  border: 1px solid #CCC;
+  line-height: 1.3em;
+  font-size: 12px;
+  font-family: Monospace;
+  color: #000;
+  padding: 1em 0px 1em 1em;
+}
+.CodeRay pre, .CodeRay code {
+  padding: 0;
+  margin: 0;
+}
+
+div.CodeRay {
+  padding: 0;
+}
+
+span.CodeRay { white-space: pre; border: 0px; padding: 2px }
+
+table.CodeRay { border-collapse: collapse; width: 100%; padding: 2px }
+table.CodeRay td {
+  padding: 1em 0.5em;
+  vertical-align: top;
+}
+
+.CodeRay .line-numbers, .CodeRay .no {
+  border: 1px solid #ECECEC;
+  margin: 0 inherit;
+  background-color: #ECECEC;
+  color: #AAA;
+  padding: 0px 7px;
+  text-align: right;
+}
+.CodeRay .line-numbers tt { font-weight: bold }
+.CodeRay .line-numbers .highlighted { color: red }
+.CodeRay .line { display: block; float: left; width: 100%; }
+.CodeRay .no { padding: 0px 4px }
+.CodeRay .code { width: 100% }
+
+ol.CodeRay { font-size: 10pt }
+ol.CodeRay li { white-space: pre }
+
+.CodeRay .code pre { overflow: auto }
+
+.CodeRay .debug { color:white ! important; background:blue ! important; }
+
+.CodeRay .attribute-name-fat { color:#00C }
+.CodeRay .attribute-name { color:#007 }
+.CodeRay .annotation { color:#f08 }
+.CodeRay .attribute-value { color:#700 }
+.CodeRay .attribute-value-fat { color:#C00 }
+.CodeRay .binary { color:#509; font-weight:bold }
+.CodeRay .comment { color:#998; font-style: italic;}
+
+.CodeRay .char { color:#04D }
+.CodeRay .ch .content { color:#04D }
+.CodeRay .ch .delimiter { color:#039 }
+
+.CodeRay .class { color:#458; font-weight:bold }
+.CodeRay .complex { color:#A08; font-weight:bold }
+.CodeRay .constant { color:teal; }
+.CodeRay .color { color:#0A0 }
+.CodeRay .class-variable { color:#369 }
+.CodeRay .decorator { color:#B0B; }
+.CodeRay .definition { color:#099; font-weight:bold }
+.CodeRay .directive { color:#088; font-weight:bold }
+.CodeRay .delimiter { color:black }
+.CodeRay .doc { color:#970 }
+.CodeRay .doc-type { color:#34b }
+.CodeRay .doc-string { color:#D42; font-weight:bold }
+.CodeRay .escape { color:#666; font-weight:bold }
+.CodeRay .entity { color:#800; font-weight:bold }
+.CodeRay .error { color:#F00; background-color:#FAA }
+.CodeRay .exception { color:#C00; font-weight:bold }
+.CodeRay .float { color:#099; }
+.CodeRay .function { color:#900; font-weight:bold }
+.CodeRay .global-variable { color:teal; font-weight:bold }
+.CodeRay .hex { color:#058; font-weight:bold }
+.CodeRay .imaginary { color:#099; }
+.CodeRay .include { color:#B44; font-weight:bold }
+
+.CodeRay .inline { color: black }
+.CodeRay .inline .inline { background: #ccc }
+.CodeRay .inline .inline .inline { background: #bbb }
+.CodeRay .inline .inline-delimiter { color: #D14; }
+.CodeRay .inline-delimiter { color: #D14; }
+
+.CodeRay .imaginary { color:#f00; }
+.CodeRay .include { color:#B2B; font-weight:bold }
+.CodeRay .instance-variable { color:teal }
+.CodeRay .label { color:#970; font-weight:bold }
+.CodeRay .local-variable { color:#963 }
+.CodeRay .octal { color:#40E; font-weight:bold }
+.CodeRay .operator-fat { color:#000; font-weight:bold }
+.CodeRay .operator { }
+.CodeRay .predefined-constant { font-weight:bold }
+.CodeRay .predefined { color:#369; font-weight:bold }
+.CodeRay .preprocessor { color:#579; }
+.CodeRay .pseudo-class { color:#00C; font-weight:bold }
+.CodeRay .predefined-type { color:#074; font-weight:bold }
+.CodeRay .reserved, .keyword { color:#000; font-weight:bold }
+
+.CodeRay .key { color: #808; }
+.CodeRay .key .delimiter { color: #606; }
+.CodeRay .key .char { color: #80f; }
+.CodeRay .value { color: #088; }
+
+.CodeRay .regexp { background-color:#fff0ff }
+.CodeRay .regexp .content { color:#808 }
+.CodeRay .regexp .delimiter { color:#404 }
+.CodeRay .regexp .modifier { color:#C2C }
+.CodeRay .regexp .function { color:#404; font-weight: bold }
+
+.CodeRay .string { color: #D20; }
+.CodeRay .string .content { color: #D14; }
+.CodeRay .string .char { color: #D14; }
+.CodeRay .string .delimiter { color: #D14; }
+
+.CodeRay .shell { color:#D14 }
+.CodeRay .shell .content { }
+.CodeRay .shell .delimiter { color:#D14 }
+
+.CodeRay .symbol { color:#990073 }
+.CodeRay .symbol .content { color:#A60 }
+.CodeRay .symbol .delimiter { color:#630 }
+
+.CodeRay .tag { color:#070 }
+.CodeRay .tag-fat { color:#070; font-weight:bold }
+.CodeRay .tag-special { color:#D70; font-weight:bold }
+.CodeRay .type { color:#339; font-weight:bold }
+.CodeRay .variable { color:#036 }
+.CodeRay .xml-text { color:#444 }
+
+.CodeRay .insert { background: #afa; }
+.CodeRay .delete { background: #faa; }
+.CodeRay .change { color: #aaf; background: #007; }
+.CodeRay .head { color: #f8f; background: #505 }
+
+.CodeRay .insert .insert { color: #080; font-weight:bold }
+.CodeRay .delete .delete { color: #800; font-weight:bold }
+.CodeRay .change .change { color: #66f; }
+.CodeRay .head .head { color: #f4f; }:pre@
+:	last@
+"/{;{	;"#Welcome!:	post"Å<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Petter¬¥s site - Main page</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
+    <meta name="generator" content="nanoc 3.1.7">
+  </head>
+  <body>
+    <div id="top">
+      <!-- Calculate topbar menu items -->
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+       
+      
+      
+      &#124 <hspace=10> <a href="/home/index.html">home</a> 
+      
+      &#124 <hspace=10> <a href="/blog/index.html">blog</a> 
+      
+      &#124 <hspace=10> <a href="/education/index.html">education</a> 
+      
+      &#124
+    </div>
+    <div>
+    <div id="main">
+      <p>Tags: (none)</p>
+      <h1 id="welcome">Welcome!</h1>
+
+    </div>
+    <div id="sidebar">
+      <h2>Contents</h2>
+      <ul>
+      
+        
+      
+        
+          <li><a href="/home/">pkvalvaag.com</a></li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <li><a href="/">Main page</a></li>
+        
+      
+        
+      
+        
+      
+      </ul>
+      <h2>Credits</h2>
+      <ul>
+        <li><a href="http://www.scientificlinux.org">Scientific Linux</a></li>
+        <li><a href="http://nanoc.stoneship.org">nanoc web publishing system</a></li>
+      </ul>
+    </div>
+    </div>
+  </body>
+</html>
+;"$<h1 id="welcome">Welcome!</h1>
+;	@"/programming/emacs-email/{;{	;"„Emacs multi-term
+================
+
+First of all you will need to familiarize yourself with the multi-term terminal package for emacs. It is very simple to install, just follow the steps at the [emacs wiki](http://emacswiki.org/emacs/MultiTerm). 
+
+To start off, open emacs, press M-x (emacs for Alt+x on most systems), enter 'multi-term' and see the terminal window open. This is a fully capable terminal that can run most command line application. We will run alpine, but the so inclined can of course run mutt or any other command line email client.
+
+Configure multi-term for alpine
+-------------------------------
+
+There is one big catch with running alpine within emacs; sending an email requires you to press Ctrl-x, which is going to be interpreted as an emacs command rather than an alpine command.
+
+Emacs does facilitate customizing new keybindings (pretty much the idea behind emacs actually), so we will make a new function that sends the system character "C-x" to the terminal window. To make sure this is available in terminal mode we will put the new functions inside the multi-term.el file you just downloaded. Browse to the section where multi-term.el defines it's keybindings and add the last line with the pinesend keybinding. 
+
+<%highlight :text do %>
+(defcustom term-bind-key-alist
+  '(
+    ("C-c C-c" . term-interrupt-subjob)
+    ("C-c x"   . multi-term-pinesend)
+<% end %>
+
+This binds the key combination Ctrl-c x to the funtion multi-term-pinesend. This function does of course not exist yet, so we will create it at the bottom of the file, after all the original function definitions take place.
+
+<%highlight :text do %>
+(defun multi-term-pinesend ()
+  "Send C-x to send pine email"
+  (interactive)
+  (term-send-raw-string "\C-x"))
+<% end %>;
+"N<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Petter's site - How to read email in emacs</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
+    <meta name="generator" content="nanoc 3.1.7">
+  </head>
+  <body>
+    <div id="top">
+      <ul>
+	<!-- Sort all items by date -->
+	<!-- Calculate topbar menu items -->
+	
+	
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	
+	  <!-- &#124 <hspace=10> <a href="/blog/index.html">blog</a> -->
+	  
+	    <li><a href="/blog/index.html" title="">blog</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/programming/index.html">programming</a> -->
+	  
+	    <li><a href="/programming/index.html" title="" class="active">programming</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/home/index.html">home</a> -->
+	  
+	    <li><a href="/home/index.html" title="">home</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/education/index.html">education</a> -->
+	  
+	    <li><a href="/education/index.html" title="">education</a></li>
+	  
+        
+      </ul>
+    </div>
+    
+    <div id="sidebar">
+      <h2>Contents</h2>
+      <ul>
+      
+          <li><a href="/programming/emacs-email/">How to read email in emacs</a></li>
+      
+          <li><a href="/programming/emacs/">Emacs, gdb and pretty printing</a></li>
+      
+          <li><a href="/programming/">Programming</a></li>
+      
+      </ul>
+      <h2>Credits</h2>
+      <ul>
+        <li><a href="http://www.scientificlinux.org">Scientific Linux</a></li>
+        <li><a href="http://nanoc.stoneship.org">nanoc web publishing system</a></li>
+      </ul>
+    </div>
+    <div id="main">
+      <p>Tags: <a class="tag" href="/tags/emacs/">emacs</a> <a class="tag" href="/tags/email/">email</a> <a class="tag" href="/tags/lisp/">lisp</a> <a class="tag" href="/tags/terminal/">terminal</a> </p>
+      <h1 id="emacs-multi-term">Emacs multi-term</h1>
+
+<p>First of all you will need to familiarize yourself with the multi-term terminal package for emacs. It is very simple to install, just follow the steps at the <a href="http://emacswiki.org/emacs/MultiTerm">emacs wiki</a>. </p>
+
+<p>To start off, open emacs, press M-x (emacs for Alt+x on most systems), enter &lsquo;multi-term&rsquo; and see the terminal window open. This is a fully capable terminal that can run most command line application. We will run alpine, but the so inclined can of course run mutt or any other command line email client.</p>
+
+<h2 id="configure-multi-term-for-alpine">Configure multi-term for alpine</h2>
+
+<p>There is one big catch with running alpine within emacs; sending an email requires you to press Ctrl-x, which is going to be interpreted as an emacs command rather than an alpine command.</p>
+
+<p>Emacs does facilitate customizing new keybindings (pretty much the idea behind emacs actually), so we will make a new function that sends the system character &ldquo;C-x&rdquo; to the terminal window. To make sure this is available in terminal mode we will put the new functions inside the multi-term.el file you just downloaded. Browse to the section where multi-term.el defines it&rsquo;s keybindings and add the last line with the pinesend keybinding. </p>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>(defcustom term-bind-key-alist
+<span class="line-numbers"><a href="#n2" name="n2">2</a></span>  '(
+<span class="line-numbers"><a href="#n3" name="n3">3</a></span>    (&quot;C-c C-c&quot; . term-interrupt-subjob)
+<span class="line-numbers"><a href="#n4" name="n4">4</a></span>    (&quot;C-c x&quot;   . multi-term-pinesend)</pre></div>
+</div>
+
+<p>This binds the key combination Ctrl-c x to the funtion multi-term-pinesend. This function does of course not exist yet, so we will create it at the bottom of the file, after all the original function definitions take place.</p>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>(defun multi-term-pinesend ()
+<span class="line-numbers"><a href="#n2" name="n2">2</a></span>  &quot;Send C-x to send pine email&quot;
+<span class="line-numbers"><a href="#n3" name="n3">3</a></span>  (interactive)
+<span class="line-numbers"><a href="#n4" name="n4">4</a></span>  (term-send-raw-string &quot;\C-x&quot;))</pre></div>
+</div>
+
+      <p align="right"><i>Posted 07 Jun 2012</i></p>
+      
+
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+	/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+	var disqus_shortname = 'petterssite';
+	var disqus_identifier = 'How to read email in emacs'; 
+	
+	/* * * DON'T EDIT BELOW THIS LINE * * */
+	(function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      
+    
+      </div>
+    </div>
+  </body>
+</html>
+;"¨	<h1 id="emacs-multi-term">Emacs multi-term</h1>
+
+<p>First of all you will need to familiarize yourself with the multi-term terminal package for emacs. It is very simple to install, just follow the steps at the <a href="http://emacswiki.org/emacs/MultiTerm">emacs wiki</a>. </p>
+
+<p>To start off, open emacs, press M-x (emacs for Alt+x on most systems), enter &lsquo;multi-term&rsquo; and see the terminal window open. This is a fully capable terminal that can run most command line application. We will run alpine, but the so inclined can of course run mutt or any other command line email client.</p>
+
+<h2 id="configure-multi-term-for-alpine">Configure multi-term for alpine</h2>
+
+<p>There is one big catch with running alpine within emacs; sending an email requires you to press Ctrl-x, which is going to be interpreted as an emacs command rather than an alpine command.</p>
+
+<p>Emacs does facilitate customizing new keybindings (pretty much the idea behind emacs actually), so we will make a new function that sends the system character &ldquo;C-x&rdquo; to the terminal window. To make sure this is available in terminal mode we will put the new functions inside the multi-term.el file you just downloaded. Browse to the section where multi-term.el defines it&rsquo;s keybindings and add the last line with the pinesend keybinding. </p>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>(defcustom term-bind-key-alist
+<span class="line-numbers"><a href="#n2" name="n2">2</a></span>  '(
+<span class="line-numbers"><a href="#n3" name="n3">3</a></span>    (&quot;C-c C-c&quot; . term-interrupt-subjob)
+<span class="line-numbers"><a href="#n4" name="n4">4</a></span>    (&quot;C-c x&quot;   . multi-term-pinesend)</pre></div>
+</div>
+
+<p>This binds the key combination Ctrl-c x to the funtion multi-term-pinesend. This function does of course not exist yet, so we will create it at the bottom of the file, after all the original function definitions take place.</p>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>(defun multi-term-pinesend ()
+<span class="line-numbers"><a href="#n2" name="n2">2</a></span>  &quot;Send C-x to send pine email&quot;
+<span class="line-numbers"><a href="#n3" name="n3">3</a></span>  (interactive)
+<span class="line-numbers"><a href="#n4" name="n4">4</a></span>  (term-send-raw-string &quot;\C-x&quot;))</pre></div>
+</div>
+;	@"/blog/{;{	;"Latest posts
+============;
+"	<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Petter's site - Main page</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
+    <meta name="generator" content="nanoc 3.1.7">
+  </head>
+  <body align="center">
+    <div id="top">
+      <ul>
+	<!-- Sort all items by date -->
+	<!-- Calculate topbar menu items -->
+	
+	
+	    
+	
+	    
+	
+	  
+            
+	    
+	
+	    
+	
+	  
+            
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	  
+            
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	  
+            
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	
+	  <!-- &#124 <hspace=10> <a href="/blog/index.html">blog</a> -->
+	  
+	    <li><a href="/blog/index.html" title="" class="active">blog</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/programming/index.html">programming</a> -->
+	  
+	    <li><a href="/programming/index.html" title="">programming</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/home/index.html">home</a> -->
+	  
+	    <li><a href="/home/index.html" title="">home</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/education/index.html">education</a> -->
+	  
+	    <li><a href="/education/index.html" title="">education</a></li>
+	  
+        
+      </ul>
+    </div>
+      
+    <div id="sidebar">
+      <h2>Contents</h2>
+      <ul>
+      
+          <li><a href="/blog/">Main page</a></li>
+      
+          <li><a href="/blog/first_post/">First post</a></li>
+      
+          <li><a href="/blog/helicopter/">My new helicopter</a></li>
+      
+      </ul>
+      <p></p>
+      <h2 padding-top="40px">Credits</h2>
+      <ul>
+        <li><a href="http://www.scientificlinux.org">Scientific Linux</a></li>
+        <li><a href="http://nanoc.stoneship.org">nanoc web publishing system</a></li>
+      </ul>
+    </div>
+    <div id="main">
+      <h1 id="latest-posts">Latest posts</h1>
+
+      <p><hr></p>
+      
+        
+      
+        
+      
+        
+          <h3>My new helicopter</h3>
+	  
+            <p class="nopadding" align="right"><i>1 Jan 2011</i></p>
+	  
+          <p>I got the eSky Belt CP CX RC helicopter for my 30th birthday, and posted some pictures</p>
+	  <p align="right"><a href="/blog/helicopter/">Read more...</a> 
+	  <hr></p>
+	
+      
+    </div>
+  </body>
+</html>
+;"-<h1 id="latest-posts">Latest posts</h1>
+;	@"/programming/emacs/{;{	;"bEmacs, gdb and pretty printing
+=========================
+
+I've recently discovered that there truly exists one IDE to rule them all. And sorry Vi fans, it is emacs. 
+
+The editor
+----------
+
+The emacs editor is based on the idea that you can accomplish anything with the keyboard. While I do find that most IDE actually *support* the use of the keyboard through shortcuts, emacs actually *forces* you to learn the shortcuts and thus making you (at least me) a more efficient code editor.
+
+It also handles identation very gracefully. Entering a tab character from *anywhere on the line* idents the whole line to the appropriate place. I've never seen any other editor do that, and while coding I've never missed the opportunity to insert a tab character somewhere in the line.
+
+I've yet to discover a coding style that emacs does not recognize out of the box, so I've never fussed with setting up syntax highlighting or identation. Emacs can also interact with a lot of language interpreters as well. That means I can launch e.g. Python from within emacs and runs chunks of code or the entire file I am editing. 
+
+I can warmly recommend reading [Emacs as you IDE](http://deep.syminet.com/emacside.html), which basically contains all you need to get started. It also gives you an idea about just how flexible and extensible emacs is.
+
+Debugging
+---------
+
+Disclaimer: I've mainly worked with C++ but I believe the following experience translate to a lot of programming languages. 
+
+Emacs has the slightly pompously named Grand Unified Debugger, which basically is an interface between many command line debuggers and the emacs editor. What it means to me is that I can launch gdb from within emacs and leverage the power of command line gdb while following the code in the editor.
+
+It is in fact also very easy to use. To invoke gdb:
+
+<% highlight :text do %>
+M-x gdb
+<% end %>
+
+This asks you how to run gdb. By default the annotate=3 is given, which I believe is necessary for the interaction with emacs. After that, simply enter the path of the binary you have compiled from your code, press enter and watch emacs purr. This gives you a split screen window with gdb on one side and some code on the other side. Gdb commands must be entered in the gdb window, and that can only be interacted with while the code is not running. Make sure to hit C-c C-c to interrupt the code execution to enable gdb interaction (set breakpoints etc.).
+
+The following commands should suffice to be able to mimic most modern IDEs, listed in the order you're likely to need it.
+
+|Command    |Result   |
+|:----------|:--------|
+|r|Run program|
+|C-c C-c|Halt program execution|
+|C-x SPACE|Insert breakpoint (from source buffer, program execution must be halted)|
+|delete *n*|Delete breakpoint number *n*|
+|delete|Delete all breakpoints|
+|n|Next line|
+|s|Step into|
+|f|Finish current function|
+|c|Continue until next breakpoint|
+|p|Print variable|
+|bt|Print current stack backtrace|
+|set args *args*|Pass *args* as arguments to the command|
+|set args|Clear arguments|
+|condition *n* *cond*|Set a condition to breakpoint *n*, e.g. i==4 or name=="Petter"|
+|condition *n*|Remove condition on breakpoint *n*|
+
+Pretty printing
+---------------
+Thus far, we've only covered normal gdb printing, and for C++ this is not very useful. For example, trying to print a string will give you the *memory address* of that string. So we really need to crank up it's usefulness.
+
+Such a shortcoming really puts gdb far behind the competition, but fortunately enough people use gdb that this has been fixed. Download [this script](http://quickgit.kde.org/?p=kdevelop.git&a=blob_plain&h=43e7be3023451410cd984de96a5c0e6445648cf4&hb=1d0811b4cfa15a19f1bfce983a16519a8f577fb5&f=debuggers/gdb/printers/qt4.py) and save it in a suitable location. In you home directory, put the following in .gdbinit
+
+<% highlight :text do %>
+python
+import sys
+
+sys.path.insert(0, '/suitable/location')
+from qt4 import register_qt4_printers
+register_qt4_printers (None)
+
+end
+set print pretty 1
+<% end %>
+
+I was truly impressed with that scripts, because it would even print some custom datatypes that we have in the codebase we use at work. 
+
+Using GUD
+---------
+The Grand Unified Debugger has some useful tools too. Truth to be told, I've only used the stack window which helps me move up the callstack to see how my program got to the state it is in right now. Just open the GUD menu in emacs and see what it can do for you!
+
+Slow stepping?
+--------------
+
+I don't know how prevalent this bug is, but should you experience extremely slow function stepping in gdb, setting the following environment variable might help you:
+
+<% highlight :text do %>
+LD_BIND_NOW=1
+<% end %>;
+"ë)<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Petter's site - Emacs, gdb and pretty printing</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
+    <meta name="generator" content="nanoc 3.1.7">
+  </head>
+  <body>
+    <div id="top">
+      <ul>
+	<!-- Sort all items by date -->
+	<!-- Calculate topbar menu items -->
+	
+	
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	
+	  <!-- &#124 <hspace=10> <a href="/blog/index.html">blog</a> -->
+	  
+	    <li><a href="/blog/index.html" title="">blog</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/programming/index.html">programming</a> -->
+	  
+	    <li><a href="/programming/index.html" title="" class="active">programming</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/home/index.html">home</a> -->
+	  
+	    <li><a href="/home/index.html" title="">home</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/education/index.html">education</a> -->
+	  
+	    <li><a href="/education/index.html" title="">education</a></li>
+	  
+        
+      </ul>
+    </div>
+    
+    <div id="sidebar">
+      <h2>Contents</h2>
+      <ul>
+      
+          <li><a href="/programming/emacs-email/">How to read email in emacs</a></li>
+      
+          <li><a href="/programming/emacs/">Emacs, gdb and pretty printing</a></li>
+      
+          <li><a href="/programming/">Programming</a></li>
+      
+      </ul>
+      <h2>Credits</h2>
+      <ul>
+        <li><a href="http://www.scientificlinux.org">Scientific Linux</a></li>
+        <li><a href="http://nanoc.stoneship.org">nanoc web publishing system</a></li>
+      </ul>
+    </div>
+    <div id="main">
+      <p>Tags: <a class="tag" href="/tags/emacs/">emacs</a> <a class="tag" href="/tags/programming/">programming</a> </p>
+      <h1 id="emacs-gdb-and-pretty-printing">Emacs, gdb and pretty printing</h1>
+
+<p>I&rsquo;ve recently discovered that there truly exists one IDE to rule them all. And sorry Vi fans, it is emacs. </p>
+
+<h2 id="the-editor">The editor</h2>
+
+<p>The emacs editor is based on the idea that you can accomplish anything with the keyboard. While I do find that most IDE actually <em>support</em> the use of the keyboard through shortcuts, emacs actually <em>forces</em> you to learn the shortcuts and thus making you (at least me) a more efficient code editor.</p>
+
+<p>It also handles identation very gracefully. Entering a tab character from <em>anywhere on the line</em> idents the whole line to the appropriate place. I&rsquo;ve never seen any other editor do that, and while coding I&rsquo;ve never missed the opportunity to insert a tab character somewhere in the line.</p>
+
+<p>I&rsquo;ve yet to discover a coding style that emacs does not recognize out of the box, so I&rsquo;ve never fussed with setting up syntax highlighting or identation. Emacs can also interact with a lot of language interpreters as well. That means I can launch e.g. Python from within emacs and runs chunks of code or the entire file I am editing. </p>
+
+<p>I can warmly recommend reading <a href="http://deep.syminet.com/emacside.html">Emacs as you IDE</a>, which basically contains all you need to get started. It also gives you an idea about just how flexible and extensible emacs is.</p>
+
+<h2 id="debugging">Debugging</h2>
+
+<p>Disclaimer: I&rsquo;ve mainly worked with C++ but I believe the following experience translate to a lot of programming languages. </p>
+
+<p>Emacs has the slightly pompously named Grand Unified Debugger, which basically is an interface between many command line debuggers and the emacs editor. What it means to me is that I can launch gdb from within emacs and leverage the power of command line gdb while following the code in the editor.</p>
+
+<p>It is in fact also very easy to use. To invoke gdb:</p>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>M-x gdb</pre></div>
+</div>
+
+<p>This asks you how to run gdb. By default the annotate=3 is given, which I believe is necessary for the interaction with emacs. After that, simply enter the path of the binary you have compiled from your code, press enter and watch emacs purr. This gives you a split screen window with gdb on one side and some code on the other side. Gdb commands must be entered in the gdb window, and that can only be interacted with while the code is not running. Make sure to hit C-c C-c to interrupt the code execution to enable gdb interaction (set breakpoints etc.).</p>
+
+<p>The following commands should suffice to be able to mimic most modern IDEs, listed in the order you&rsquo;re likely to need it.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Command</th>
+      <th style="text-align: left">Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">r</td>
+      <td style="text-align: left">Run program</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">C-c C-c</td>
+      <td style="text-align: left">Halt program execution</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">C-x SPACE</td>
+      <td style="text-align: left">Insert breakpoint (from source buffer, program execution must be halted)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">delete <em>n</em></td>
+      <td style="text-align: left">Delete breakpoint number <em>n</em></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">delete</td>
+      <td style="text-align: left">Delete all breakpoints</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">n</td>
+      <td style="text-align: left">Next line</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">s</td>
+      <td style="text-align: left">Step into</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">f</td>
+      <td style="text-align: left">Finish current function</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">c</td>
+      <td style="text-align: left">Continue until next breakpoint</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">p</td>
+      <td style="text-align: left">Print variable</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">bt</td>
+      <td style="text-align: left">Print current stack backtrace</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">set args <em>args</em></td>
+      <td style="text-align: left">Pass <em>args</em> as arguments to the command</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">set args</td>
+      <td style="text-align: left">Clear arguments</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">condition <em>n</em> <em>cond</em></td>
+      <td style="text-align: left">Set a condition to breakpoint <em>n</em>, e.g. i==4 or name==&rdquo;Petter&rdquo;</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">condition <em>n</em></td>
+      <td style="text-align: left">Remove condition on breakpoint <em>n</em></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="pretty-printing">Pretty printing</h2>
+<p>Thus far, we&rsquo;ve only covered normal gdb printing, and for C++ this is not very useful. For example, trying to print a string will give you the <em>memory address</em> of that string. So we really need to crank up it&rsquo;s usefulness.</p>
+
+<p>Such a shortcoming really puts gdb far behind the competition, but fortunately enough people use gdb that this has been fixed. Download <a href="http://quickgit.kde.org/?p=kdevelop.git&amp;a=blob_plain&amp;h=43e7be3023451410cd984de96a5c0e6445648cf4&amp;hb=1d0811b4cfa15a19f1bfce983a16519a8f577fb5&amp;f=debuggers/gdb/printers/qt4.py">this script</a> and save it in a suitable location. In you home directory, put the following in .gdbinit</p>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"> <a href="#n1" name="n1">1</a></span>python
+<span class="line-numbers"> <a href="#n2" name="n2">2</a></span>import sys
+<span class="line-numbers"> <a href="#n3" name="n3">3</a></span>
+<span class="line-numbers"> <a href="#n4" name="n4">4</a></span>sys.path.insert(0, '/suitable/location')
+<span class="line-numbers"> <a href="#n5" name="n5">5</a></span>from qt4 import register_qt4_printers
+<span class="line-numbers"> <a href="#n6" name="n6">6</a></span>register_qt4_printers (None)
+<span class="line-numbers"> <a href="#n7" name="n7">7</a></span>
+<span class="line-numbers"> <a href="#n8" name="n8">8</a></span>end
+<span class="line-numbers"> <a href="#n9" name="n9">9</a></span>set print pretty 1</pre></div>
+</div>
+
+<p>I was truly impressed with that scripts, because it would even print some custom datatypes that we have in the codebase we use at work. </p>
+
+<h2 id="using-gud">Using GUD</h2>
+<p>The Grand Unified Debugger has some useful tools too. Truth to be told, I&rsquo;ve only used the stack window which helps me move up the callstack to see how my program got to the state it is in right now. Just open the GUD menu in emacs and see what it can do for you!</p>
+
+<h2 id="slow-stepping">Slow stepping?</h2>
+
+<p>I don&rsquo;t know how prevalent this bug is, but should you experience extremely slow function stepping in gdb, setting the following environment variable might help you:</p>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>LD_BIND_NOW=1</pre></div>
+</div>
+
+      <p align="right"><i>Posted 15 May 2012</i></p>
+      
+
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+	/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+	var disqus_shortname = 'petterssite';
+	var disqus_identifier = 'Emacs, gdb and pretty printing'; 
+	
+	/* * * DON'T EDIT BELOW THIS LINE * * */
+	(function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      
+    
+      </div>
+    </div>
+  </body>
+</html>
+;"9<h1 id="emacs-gdb-and-pretty-printing">Emacs, gdb and pretty printing</h1>
+
+<p>I&rsquo;ve recently discovered that there truly exists one IDE to rule them all. And sorry Vi fans, it is emacs. </p>
+
+<h2 id="the-editor">The editor</h2>
+
+<p>The emacs editor is based on the idea that you can accomplish anything with the keyboard. While I do find that most IDE actually <em>support</em> the use of the keyboard through shortcuts, emacs actually <em>forces</em> you to learn the shortcuts and thus making you (at least me) a more efficient code editor.</p>
+
+<p>It also handles identation very gracefully. Entering a tab character from <em>anywhere on the line</em> idents the whole line to the appropriate place. I&rsquo;ve never seen any other editor do that, and while coding I&rsquo;ve never missed the opportunity to insert a tab character somewhere in the line.</p>
+
+<p>I&rsquo;ve yet to discover a coding style that emacs does not recognize out of the box, so I&rsquo;ve never fussed with setting up syntax highlighting or identation. Emacs can also interact with a lot of language interpreters as well. That means I can launch e.g. Python from within emacs and runs chunks of code or the entire file I am editing. </p>
+
+<p>I can warmly recommend reading <a href="http://deep.syminet.com/emacside.html">Emacs as you IDE</a>, which basically contains all you need to get started. It also gives you an idea about just how flexible and extensible emacs is.</p>
+
+<h2 id="debugging">Debugging</h2>
+
+<p>Disclaimer: I&rsquo;ve mainly worked with C++ but I believe the following experience translate to a lot of programming languages. </p>
+
+<p>Emacs has the slightly pompously named Grand Unified Debugger, which basically is an interface between many command line debuggers and the emacs editor. What it means to me is that I can launch gdb from within emacs and leverage the power of command line gdb while following the code in the editor.</p>
+
+<p>It is in fact also very easy to use. To invoke gdb:</p>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>M-x gdb</pre></div>
+</div>
+
+<p>This asks you how to run gdb. By default the annotate=3 is given, which I believe is necessary for the interaction with emacs. After that, simply enter the path of the binary you have compiled from your code, press enter and watch emacs purr. This gives you a split screen window with gdb on one side and some code on the other side. Gdb commands must be entered in the gdb window, and that can only be interacted with while the code is not running. Make sure to hit C-c C-c to interrupt the code execution to enable gdb interaction (set breakpoints etc.).</p>
+
+<p>The following commands should suffice to be able to mimic most modern IDEs, listed in the order you&rsquo;re likely to need it.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Command</th>
+      <th style="text-align: left">Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">r</td>
+      <td style="text-align: left">Run program</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">C-c C-c</td>
+      <td style="text-align: left">Halt program execution</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">C-x SPACE</td>
+      <td style="text-align: left">Insert breakpoint (from source buffer, program execution must be halted)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">delete <em>n</em></td>
+      <td style="text-align: left">Delete breakpoint number <em>n</em></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">delete</td>
+      <td style="text-align: left">Delete all breakpoints</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">n</td>
+      <td style="text-align: left">Next line</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">s</td>
+      <td style="text-align: left">Step into</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">f</td>
+      <td style="text-align: left">Finish current function</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">c</td>
+      <td style="text-align: left">Continue until next breakpoint</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">p</td>
+      <td style="text-align: left">Print variable</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">bt</td>
+      <td style="text-align: left">Print current stack backtrace</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">set args <em>args</em></td>
+      <td style="text-align: left">Pass <em>args</em> as arguments to the command</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">set args</td>
+      <td style="text-align: left">Clear arguments</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">condition <em>n</em> <em>cond</em></td>
+      <td style="text-align: left">Set a condition to breakpoint <em>n</em>, e.g. i==4 or name==&rdquo;Petter&rdquo;</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">condition <em>n</em></td>
+      <td style="text-align: left">Remove condition on breakpoint <em>n</em></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="pretty-printing">Pretty printing</h2>
+<p>Thus far, we&rsquo;ve only covered normal gdb printing, and for C++ this is not very useful. For example, trying to print a string will give you the <em>memory address</em> of that string. So we really need to crank up it&rsquo;s usefulness.</p>
+
+<p>Such a shortcoming really puts gdb far behind the competition, but fortunately enough people use gdb that this has been fixed. Download <a href="http://quickgit.kde.org/?p=kdevelop.git&amp;a=blob_plain&amp;h=43e7be3023451410cd984de96a5c0e6445648cf4&amp;hb=1d0811b4cfa15a19f1bfce983a16519a8f577fb5&amp;f=debuggers/gdb/printers/qt4.py">this script</a> and save it in a suitable location. In you home directory, put the following in .gdbinit</p>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"> <a href="#n1" name="n1">1</a></span>python
+<span class="line-numbers"> <a href="#n2" name="n2">2</a></span>import sys
+<span class="line-numbers"> <a href="#n3" name="n3">3</a></span>
+<span class="line-numbers"> <a href="#n4" name="n4">4</a></span>sys.path.insert(0, '/suitable/location')
+<span class="line-numbers"> <a href="#n5" name="n5">5</a></span>from qt4 import register_qt4_printers
+<span class="line-numbers"> <a href="#n6" name="n6">6</a></span>register_qt4_printers (None)
+<span class="line-numbers"> <a href="#n7" name="n7">7</a></span>
+<span class="line-numbers"> <a href="#n8" name="n8">8</a></span>end
+<span class="line-numbers"> <a href="#n9" name="n9">9</a></span>set print pretty 1</pre></div>
+</div>
+
+<p>I was truly impressed with that scripts, because it would even print some custom datatypes that we have in the codebase we use at work. </p>
+
+<h2 id="using-gud">Using GUD</h2>
+<p>The Grand Unified Debugger has some useful tools too. Truth to be told, I&rsquo;ve only used the stack window which helps me move up the callstack to see how my program got to the state it is in right now. Just open the GUD menu in emacs and see what it can do for you!</p>
+
+<h2 id="slow-stepping">Slow stepping?</h2>
+
+<p>I don&rsquo;t know how prevalent this bug is, but should you experience extremely slow function stepping in gdb, setting the following environment variable might help you:</p>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>LD_BIND_NOW=1</pre></div>
+</div>
+;	@!"/tags/emacs/{;{	;"∂<p>1 item is tagged with <em>emacs</em>:</p>
+    <ul>
+      <% articles_tagged_with('emacs').each do |a| %>
+        <li><%= link_to(a[:title], a) %></li>   
+      <% end %>
+    </ul>;
+"†<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Petter's site - Tag: emacs</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
+    <meta name="generator" content="nanoc 3.1.7">
+  </head>
+  <body>
+    <div id="top">
+      <ul>
+	<!-- Sort all items by date -->
+	<!-- Calculate topbar menu items -->
+	
+	
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	
+	  <!-- &#124 <hspace=10> <a href="/blog/index.html">blog</a> -->
+	  
+	    <li><a href="/blog/index.html" title="">blog</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/programming/index.html">programming</a> -->
+	  
+	    <li><a href="/programming/index.html" title="">programming</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/home/index.html">home</a> -->
+	  
+	    <li><a href="/home/index.html" title="">home</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/education/index.html">education</a> -->
+	  
+	    <li><a href="/education/index.html" title="">education</a></li>
+	  
+        
+      </ul>
+    </div>
+    
+    <div id="sidebar">
+      <h2>Contents</h2>
+      <ul>
+      
+          <li><a href="/tags/terminal/">Tag: terminal</a></li>
+      
+          <li><a href="/tags/numericmath/">Tag: numericmath</a></li>
+      
+          <li><a href="/tags/education/">Tag: education</a></li>
+      
+          <li><a href="/tags/fun/">Tag: fun</a></li>
+      
+          <li><a href="/tags/emacs/">Tag: emacs</a></li>
+      
+          <li><a href="/tags/blog/">Tag: blog</a></li>
+      
+          <li><a href="/tags/email/">Tag: email</a></li>
+      
+          <li><a href="/tags/programming/">Tag: programming</a></li>
+      
+          <li><a href="/tags/testing/">Tag: testing</a></li>
+      
+          <li><a href="/tags/RCHelicopter/">Tag: RCHelicopter</a></li>
+      
+          <li><a href="/tags/imageprocessing/">Tag: imageprocessing</a></li>
+      
+          <li><a href="/tags/lisp/">Tag: lisp</a></li>
+      
+      </ul>
+      <h2>Credits</h2>
+      <ul>
+        <li><a href="http://www.scientificlinux.org">Scientific Linux</a></li>
+        <li><a href="http://nanoc.stoneship.org">nanoc web publishing system</a></li>
+      </ul>
+    </div>
+    <div id="main">
+      <p>Tags: </p>
+      <p>1 item is tagged with <em>emacs</em>:</p>
+    <ul>
+      
+        <li><a href="/programming/emacs/">Emacs, gdb and pretty printing</a></li>   
+      
+        <li><a href="/programming/emacs-email/">How to read email in emacs</a></li>   
+      
+    </ul>
+      <p align="right"><i>Posted 01 Jan 2000</i></p>
+      
+    
+      </div>
+    </div>
+  </body>
+</html>
+;" <p>1 item is tagged with <em>emacs</em>:</p>
+    <ul>
+      
+        <li><a href="/programming/emacs/">Emacs, gdb and pretty printing</a></li>   
+      
+        <li><a href="/programming/emacs-email/">How to read email in emacs</a></li>   
+      
+    </ul>;	@'"/tags/imageprocessing/{;{	;" <p>1 item is tagged with <em>imageprocessing</em>:</p>
+    <ul>
+      <% articles_tagged_with('imageprocessing').each do |a| %>
+        <li><%= link_to(a[:title], a) %></li>   
+      <% end %>
+    </ul>;
+"X<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Petter's site - Tag: imageprocessing</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
+    <meta name="generator" content="nanoc 3.1.7">
+  </head>
+  <body>
+    <div id="top">
+      <ul>
+	<!-- Sort all items by date -->
+	<!-- Calculate topbar menu items -->
+	
+	
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	
+	  <!-- &#124 <hspace=10> <a href="/blog/index.html">blog</a> -->
+	  
+	    <li><a href="/blog/index.html" title="">blog</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/programming/index.html">programming</a> -->
+	  
+	    <li><a href="/programming/index.html" title="">programming</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/home/index.html">home</a> -->
+	  
+	    <li><a href="/home/index.html" title="">home</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/education/index.html">education</a> -->
+	  
+	    <li><a href="/education/index.html" title="">education</a></li>
+	  
+        
+      </ul>
+    </div>
+    
+    <div id="sidebar">
+      <h2>Contents</h2>
+      <ul>
+      
+          <li><a href="/tags/terminal/">Tag: terminal</a></li>
+      
+          <li><a href="/tags/numericmath/">Tag: numericmath</a></li>
+      
+          <li><a href="/tags/education/">Tag: education</a></li>
+      
+          <li><a href="/tags/fun/">Tag: fun</a></li>
+      
+          <li><a href="/tags/emacs/">Tag: emacs</a></li>
+      
+          <li><a href="/tags/blog/">Tag: blog</a></li>
+      
+          <li><a href="/tags/email/">Tag: email</a></li>
+      
+          <li><a href="/tags/programming/">Tag: programming</a></li>
+      
+          <li><a href="/tags/testing/">Tag: testing</a></li>
+      
+          <li><a href="/tags/RCHelicopter/">Tag: RCHelicopter</a></li>
+      
+          <li><a href="/tags/imageprocessing/">Tag: imageprocessing</a></li>
+      
+          <li><a href="/tags/lisp/">Tag: lisp</a></li>
+      
+      </ul>
+      <h2>Credits</h2>
+      <ul>
+        <li><a href="http://www.scientificlinux.org">Scientific Linux</a></li>
+        <li><a href="http://nanoc.stoneship.org">nanoc web publishing system</a></li>
+      </ul>
+    </div>
+    <div id="main">
+      <p>Tags: </p>
+      <p>1 item is tagged with <em>imageprocessing</em>:</p>
+    <ul>
+      
+        <li><a href="/education/imaging/">Computational Science in Imaging</a></li>   
+      
+    </ul>
+      <p align="right"><i>Posted 01 Jan 2000</i></p>
+      
+    
+      </div>
+    </div>
+  </body>
+</html>
+;"Æ<p>1 item is tagged with <em>imageprocessing</em>:</p>
+    <ul>
+      
+        <li><a href="/education/imaging/">Computational Science in Imaging</a></li>   
+      
+    </ul>;	@-"/blog/first_post/{;{	;"*Testing stuff
+=============
+
+New page;
+"†<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Petter's site - First post</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
+    <meta name="generator" content="nanoc 3.1.7">
+  </head>
+  <body>
+    <div id="top">
+      <ul>
+	<!-- Sort all items by date -->
+	<!-- Calculate topbar menu items -->
+	
+	
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	
+	  <!-- &#124 <hspace=10> <a href="/blog/index.html">blog</a> -->
+	  
+	    <li><a href="/blog/index.html" title="" class="active">blog</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/programming/index.html">programming</a> -->
+	  
+	    <li><a href="/programming/index.html" title="">programming</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/home/index.html">home</a> -->
+	  
+	    <li><a href="/home/index.html" title="">home</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/education/index.html">education</a> -->
+	  
+	    <li><a href="/education/index.html" title="">education</a></li>
+	  
+        
+      </ul>
+    </div>
+    
+    <div id="sidebar">
+      <h2>Contents</h2>
+      <ul>
+      
+          <li><a href="/blog/">Main page</a></li>
+      
+          <li><a href="/blog/first_post/">First post</a></li>
+      
+          <li><a href="/blog/helicopter/">My new helicopter</a></li>
+      
+      </ul>
+      <h2>Credits</h2>
+      <ul>
+        <li><a href="http://www.scientificlinux.org">Scientific Linux</a></li>
+        <li><a href="http://nanoc.stoneship.org">nanoc web publishing system</a></li>
+      </ul>
+    </div>
+    <div id="main">
+      <p>Tags: <a class="tag" href="/tags/testing/">testing</a> </p>
+      <h1 id="testing-stuff">Testing stuff</h1>
+
+<p>New page</p>
+
+      <p align="right"><i>Posted 2 Jan 2012</i></p>
+      
+    
+      </div>
+    </div>
+  </body>
+</html>
+;"@<h1 id="testing-stuff">Testing stuff</h1>
+
+<p>New page</p>
+;	@3"/tags/lisp/{;{	;"¥<p>1 item is tagged with <em>lisp</em>:</p>
+    <ul>
+      <% articles_tagged_with('lisp').each do |a| %>
+        <li><%= link_to(a[:title], a) %></li>   
+      <% end %>
+    </ul>;
+"B<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Petter's site - Tag: lisp</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
+    <meta name="generator" content="nanoc 3.1.7">
+  </head>
+  <body>
+    <div id="top">
+      <ul>
+	<!-- Sort all items by date -->
+	<!-- Calculate topbar menu items -->
+	
+	
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	
+	  <!-- &#124 <hspace=10> <a href="/blog/index.html">blog</a> -->
+	  
+	    <li><a href="/blog/index.html" title="">blog</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/programming/index.html">programming</a> -->
+	  
+	    <li><a href="/programming/index.html" title="">programming</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/home/index.html">home</a> -->
+	  
+	    <li><a href="/home/index.html" title="">home</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/education/index.html">education</a> -->
+	  
+	    <li><a href="/education/index.html" title="">education</a></li>
+	  
+        
+      </ul>
+    </div>
+    
+    <div id="sidebar">
+      <h2>Contents</h2>
+      <ul>
+      
+          <li><a href="/tags/terminal/">Tag: terminal</a></li>
+      
+          <li><a href="/tags/numericmath/">Tag: numericmath</a></li>
+      
+          <li><a href="/tags/education/">Tag: education</a></li>
+      
+          <li><a href="/tags/fun/">Tag: fun</a></li>
+      
+          <li><a href="/tags/emacs/">Tag: emacs</a></li>
+      
+          <li><a href="/tags/blog/">Tag: blog</a></li>
+      
+          <li><a href="/tags/email/">Tag: email</a></li>
+      
+          <li><a href="/tags/programming/">Tag: programming</a></li>
+      
+          <li><a href="/tags/testing/">Tag: testing</a></li>
+      
+          <li><a href="/tags/RCHelicopter/">Tag: RCHelicopter</a></li>
+      
+          <li><a href="/tags/imageprocessing/">Tag: imageprocessing</a></li>
+      
+          <li><a href="/tags/lisp/">Tag: lisp</a></li>
+      
+      </ul>
+      <h2>Credits</h2>
+      <ul>
+        <li><a href="http://www.scientificlinux.org">Scientific Linux</a></li>
+        <li><a href="http://nanoc.stoneship.org">nanoc web publishing system</a></li>
+      </ul>
+    </div>
+    <div id="main">
+      <p>Tags: </p>
+      <p>1 item is tagged with <em>lisp</em>:</p>
+    <ul>
+      
+        <li><a href="/programming/emacs-email/">How to read email in emacs</a></li>   
+      
+    </ul>
+      <p align="right"><i>Posted 01 Jan 2000</i></p>
+      
+    
+      </div>
+    </div>
+  </body>
+</html>
+;"£<p>1 item is tagged with <em>lisp</em>:</p>
+    <ul>
+      
+        <li><a href="/programming/emacs-email/">How to read email in emacs</a></li>   
+      
+    </ul>;	@9"$/background/Little_Black_Dress/{;{ "/blog/img/heli/{:medium{ ;{ :
+small{ "/tags/testing/{;{	;"∫<p>1 item is tagged with <em>testing</em>:</p>
+    <ul>
+      <% articles_tagged_with('testing').each do |a| %>
+        <li><%= link_to(a[:title], a) %></li>   
+      <% end %>
+    </ul>;
+"0<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Petter's site - Tag: testing</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
+    <meta name="generator" content="nanoc 3.1.7">
+  </head>
+  <body>
+    <div id="top">
+      <ul>
+	<!-- Sort all items by date -->
+	<!-- Calculate topbar menu items -->
+	
+	
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	
+	  <!-- &#124 <hspace=10> <a href="/blog/index.html">blog</a> -->
+	  
+	    <li><a href="/blog/index.html" title="">blog</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/programming/index.html">programming</a> -->
+	  
+	    <li><a href="/programming/index.html" title="">programming</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/home/index.html">home</a> -->
+	  
+	    <li><a href="/home/index.html" title="">home</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/education/index.html">education</a> -->
+	  
+	    <li><a href="/education/index.html" title="">education</a></li>
+	  
+        
+      </ul>
+    </div>
+    
+    <div id="sidebar">
+      <h2>Contents</h2>
+      <ul>
+      
+          <li><a href="/tags/terminal/">Tag: terminal</a></li>
+      
+          <li><a href="/tags/numericmath/">Tag: numericmath</a></li>
+      
+          <li><a href="/tags/education/">Tag: education</a></li>
+      
+          <li><a href="/tags/fun/">Tag: fun</a></li>
+      
+          <li><a href="/tags/emacs/">Tag: emacs</a></li>
+      
+          <li><a href="/tags/blog/">Tag: blog</a></li>
+      
+          <li><a href="/tags/email/">Tag: email</a></li>
+      
+          <li><a href="/tags/programming/">Tag: programming</a></li>
+      
+          <li><a href="/tags/testing/">Tag: testing</a></li>
+      
+          <li><a href="/tags/RCHelicopter/">Tag: RCHelicopter</a></li>
+      
+          <li><a href="/tags/imageprocessing/">Tag: imageprocessing</a></li>
+      
+          <li><a href="/tags/lisp/">Tag: lisp</a></li>
+      
+      </ul>
+      <h2>Credits</h2>
+      <ul>
+        <li><a href="http://www.scientificlinux.org">Scientific Linux</a></li>
+        <li><a href="http://nanoc.stoneship.org">nanoc web publishing system</a></li>
+      </ul>
+    </div>
+    <div id="main">
+      <p>Tags: </p>
+      <p>1 item is tagged with <em>testing</em>:</p>
+    <ul>
+      
+        <li><a href="/blog/first_post/">First post</a></li>   
+      
+    </ul>
+      <p align="right"><i>Posted 01 Jan 2000</i></p>
+      
+    
+      </div>
+    </div>
+  </body>
+</html>
+;"é<p>1 item is tagged with <em>testing</em>:</p>
+    <ul>
+      
+        <li><a href="/blog/first_post/">First post</a></li>   
+      
+    </ul>;	@G"/home/test/{;{	;"±Welcome to pkvalvaag.com
+========================
+
+This is my site. I will post stuff that happens in my life and articles about stuff I enjoy.
+
+![Meg](img/P1000723_1_small.jpg);
+"J<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Petter¬¥s site - test page</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
+    <meta name="generator" content="nanoc 3.1.7">
+  </head>
+  <body>
+    <div id="top">
+      <!-- Calculate topbar menu items -->
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+       
+      <!--  -->
+      
+      &#124 <hspace=10> <a href="//index.html"></a> 
+      
+      &#124 <hspace=10> <a href="/education/index.html">education</a> 
+      
+      &#124 <hspace=10> <a href="/home/index.html">home</a> 
+      
+      &#124
+    </div>
+    <div>
+    <div id="main">
+      <p>Tags: (none)</p>
+      <h1 id="welcome-to-pkvalvaagcom">Welcome to pkvalvaag.com</h1>
+
+<p>This is my site. I will post stuff that happens in my life and articles about stuff I enjoy.</p>
+
+<p><img src="img/P1000723_1_small.jpg" alt="Meg" /></p>
+
+    </div>
+    <div id="sidebar">
+      <h2>Contents</h2>
+      <ul>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <li><a href="/home/">pkvalvaag.com</a></li>
+        
+      
+        
+          <li><a href="/home/test/">test page</a></li>
+        
+      
+        
+      
+      </ul>
+      <h2>Credits</h2>
+      <ul>
+        <li><a href="http://www.scientificlinux.org">Scientific Linux</a></li>
+        <li><a href="http://nanoc.stoneship.org">nanoc web publishing system</a></li>
+      </ul>
+    </div>
+    </div>
+  </body>
+</html>
+;"›<h1 id="welcome-to-pkvalvaagcom">Welcome to pkvalvaag.com</h1>
+
+<p>This is my site. I will post stuff that happens in my life and articles about stuff I enjoy.</p>
+
+<p><img src="img/P1000723_1_small.jpg" alt="Meg" /></p>
+;	@M"/background/prestige/{;{ "/tags/numericmath/{;{	;"¬<p>1 item is tagged with <em>numericmath</em>:</p>
+    <ul>
+      <% articles_tagged_with('numericmath').each do |a| %>
+        <li><%= link_to(a[:title], a) %></li>   
+      <% end %>
+    </ul>;
+"P<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Petter's site - Tag: numericmath</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
+    <meta name="generator" content="nanoc 3.1.7">
+  </head>
+  <body>
+    <div id="top">
+      <ul>
+	<!-- Sort all items by date -->
+	<!-- Calculate topbar menu items -->
+	
+	
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	
+	  <!-- &#124 <hspace=10> <a href="/blog/index.html">blog</a> -->
+	  
+	    <li><a href="/blog/index.html" title="">blog</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/programming/index.html">programming</a> -->
+	  
+	    <li><a href="/programming/index.html" title="">programming</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/home/index.html">home</a> -->
+	  
+	    <li><a href="/home/index.html" title="">home</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/education/index.html">education</a> -->
+	  
+	    <li><a href="/education/index.html" title="">education</a></li>
+	  
+        
+      </ul>
+    </div>
+    
+    <div id="sidebar">
+      <h2>Contents</h2>
+      <ul>
+      
+          <li><a href="/tags/terminal/">Tag: terminal</a></li>
+      
+          <li><a href="/tags/numericmath/">Tag: numericmath</a></li>
+      
+          <li><a href="/tags/education/">Tag: education</a></li>
+      
+          <li><a href="/tags/fun/">Tag: fun</a></li>
+      
+          <li><a href="/tags/emacs/">Tag: emacs</a></li>
+      
+          <li><a href="/tags/blog/">Tag: blog</a></li>
+      
+          <li><a href="/tags/email/">Tag: email</a></li>
+      
+          <li><a href="/tags/programming/">Tag: programming</a></li>
+      
+          <li><a href="/tags/testing/">Tag: testing</a></li>
+      
+          <li><a href="/tags/RCHelicopter/">Tag: RCHelicopter</a></li>
+      
+          <li><a href="/tags/imageprocessing/">Tag: imageprocessing</a></li>
+      
+          <li><a href="/tags/lisp/">Tag: lisp</a></li>
+      
+      </ul>
+      <h2>Credits</h2>
+      <ul>
+        <li><a href="http://www.scientificlinux.org">Scientific Linux</a></li>
+        <li><a href="http://nanoc.stoneship.org">nanoc web publishing system</a></li>
+      </ul>
+    </div>
+    <div id="main">
+      <p>Tags: </p>
+      <p>1 item is tagged with <em>numericmath</em>:</p>
+    <ul>
+      
+        <li><a href="/education/imaging/">Computational Science in Imaging</a></li>   
+      
+    </ul>
+      <p align="right"><i>Posted 01 Jan 2000</i></p>
+      
+    
+      </div>
+    </div>
+  </body>
+</html>
+;"™<p>1 item is tagged with <em>numericmath</em>:</p>
+    <ul>
+      
+        <li><a href="/education/imaging/">Computational Science in Imaging</a></li>   
+      
+    </ul>;	@V"/tags/blog/{;{	;"¥<p>1 item is tagged with <em>blog</em>:</p>
+    <ul>
+      <% articles_tagged_with('blog').each do |a| %>
+        <li><%= link_to(a[:title], a) %></li>   
+      <% end %>
+    </ul>;
+"<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Petter's site - Tag: blog</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
+    <meta name="generator" content="nanoc 3.1.7">
+  </head>
+  <body>
+    <div id="top">
+      <ul>
+	<!-- Sort all items by date -->
+	<!-- Calculate topbar menu items -->
+	
+	
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	
+	  <!-- &#124 <hspace=10> <a href="/blog/index.html">blog</a> -->
+	  
+	    <li><a href="/blog/index.html" title="">blog</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/programming/index.html">programming</a> -->
+	  
+	    <li><a href="/programming/index.html" title="">programming</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/home/index.html">home</a> -->
+	  
+	    <li><a href="/home/index.html" title="">home</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/education/index.html">education</a> -->
+	  
+	    <li><a href="/education/index.html" title="">education</a></li>
+	  
+        
+      </ul>
+    </div>
+    
+    <div id="sidebar">
+      <h2>Contents</h2>
+      <ul>
+      
+          <li><a href="/tags/terminal/">Tag: terminal</a></li>
+      
+          <li><a href="/tags/numericmath/">Tag: numericmath</a></li>
+      
+          <li><a href="/tags/education/">Tag: education</a></li>
+      
+          <li><a href="/tags/fun/">Tag: fun</a></li>
+      
+          <li><a href="/tags/emacs/">Tag: emacs</a></li>
+      
+          <li><a href="/tags/blog/">Tag: blog</a></li>
+      
+          <li><a href="/tags/email/">Tag: email</a></li>
+      
+          <li><a href="/tags/programming/">Tag: programming</a></li>
+      
+          <li><a href="/tags/testing/">Tag: testing</a></li>
+      
+          <li><a href="/tags/RCHelicopter/">Tag: RCHelicopter</a></li>
+      
+          <li><a href="/tags/imageprocessing/">Tag: imageprocessing</a></li>
+      
+          <li><a href="/tags/lisp/">Tag: lisp</a></li>
+      
+      </ul>
+      <h2>Credits</h2>
+      <ul>
+        <li><a href="http://www.scientificlinux.org">Scientific Linux</a></li>
+        <li><a href="http://nanoc.stoneship.org">nanoc web publishing system</a></li>
+      </ul>
+    </div>
+    <div id="main">
+      <p>Tags: </p>
+      <p>1 item is tagged with <em>blog</em>:</p>
+    <ul>
+      
+        <li><a href="/blog/">Main page</a></li>   
+      
+    </ul>
+      <p align="right"><i>Posted 01 Jan 2000</i></p>
+      
+    
+      </div>
+    </div>
+  </body>
+</html>
+;"<p>1 item is tagged with <em>blog</em>:</p>
+    <ul>
+      
+        <li><a href="/blog/">Main page</a></li>   
+      
+    </ul>;	@\"/home/img/profilbilde/{;{;"Hi, I'm a new item!;@a;	@a"/tags/programming/{;{	;"ƒ<p>2 items are tagged with <em>programming</em>:</p>
+    <ul>
+      <% articles_tagged_with('programming').each do |a| %>
+        <li><%= link_to(a[:title], a) %></li>   
+      <% end %>
+    </ul>;
+"ì<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Petter's site - Tag: programming</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
+    <meta name="generator" content="nanoc 3.1.7">
+  </head>
+  <body>
+    <div id="top">
+      <ul>
+	<!-- Sort all items by date -->
+	<!-- Calculate topbar menu items -->
+	
+	
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	
+	  <!-- &#124 <hspace=10> <a href="/blog/index.html">blog</a> -->
+	  
+	    <li><a href="/blog/index.html" title="">blog</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/programming/index.html">programming</a> -->
+	  
+	    <li><a href="/programming/index.html" title="">programming</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/home/index.html">home</a> -->
+	  
+	    <li><a href="/home/index.html" title="">home</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/education/index.html">education</a> -->
+	  
+	    <li><a href="/education/index.html" title="">education</a></li>
+	  
+        
+      </ul>
+    </div>
+    
+    <div id="sidebar">
+      <h2>Contents</h2>
+      <ul>
+      
+          <li><a href="/tags/terminal/">Tag: terminal</a></li>
+      
+          <li><a href="/tags/numericmath/">Tag: numericmath</a></li>
+      
+          <li><a href="/tags/education/">Tag: education</a></li>
+      
+          <li><a href="/tags/fun/">Tag: fun</a></li>
+      
+          <li><a href="/tags/emacs/">Tag: emacs</a></li>
+      
+          <li><a href="/tags/blog/">Tag: blog</a></li>
+      
+          <li><a href="/tags/email/">Tag: email</a></li>
+      
+          <li><a href="/tags/programming/">Tag: programming</a></li>
+      
+          <li><a href="/tags/testing/">Tag: testing</a></li>
+      
+          <li><a href="/tags/RCHelicopter/">Tag: RCHelicopter</a></li>
+      
+          <li><a href="/tags/imageprocessing/">Tag: imageprocessing</a></li>
+      
+          <li><a href="/tags/lisp/">Tag: lisp</a></li>
+      
+      </ul>
+      <h2>Credits</h2>
+      <ul>
+        <li><a href="http://www.scientificlinux.org">Scientific Linux</a></li>
+        <li><a href="http://nanoc.stoneship.org">nanoc web publishing system</a></li>
+      </ul>
+    </div>
+    <div id="main">
+      <p>Tags: </p>
+      <p>2 items are tagged with <em>programming</em>:</p>
+    <ul>
+      
+        <li><a href="/programming/emacs/">Emacs, gdb and pretty printing</a></li>   
+      
+        <li><a href="/programming/">Programming</a></li>   
+      
+    </ul>
+      <p align="right"><i>Posted 01 Jan 2000</i></p>
+      
+    
+      </div>
+    </div>
+  </body>
+</html>
+;"Ì<p>2 items are tagged with <em>programming</em>:</p>
+    <ul>
+      
+        <li><a href="/programming/emacs/">Emacs, gdb and pretty printing</a></li>   
+      
+        <li><a href="/programming/">Programming</a></li>   
+      
+    </ul>;	@f"/education/imaging/{;{	;"*
+Computational Science in Imaging
+================================
+
+This subject introduced me to the image deblurring problem. The problem at hand was deblurring an image which had been blurred due to linear motion while the camera shutter was open (commonly known as a shake-hand photo). Any image blur can be described by the blurring kernel or Point Spread Function ([PSF](http://en.wikipedia.org/wiki/Point_spread_function)), and if this is known one can simply deconvolve the blurred image to get the original unblurred image.
+
+Read this if that sounded greek
+-------------------------------
+The PSF for camera motion blur can best be described by a line. To understand what that means, consider the following thought experiment. If I photograph the night sky, it is completely dark except one bright shining star. As luck has it, this star, when projected onto the sensor of my camera, fills exactly one pixel somewhere at the center of the image. This pixel is completely white and assumes an RGB value of (255,255,255). That means that the recorded scene is 100% of each of the colors red, green and blue. Together that is perceived as the whitest white my computer screen can display.
+
+In a perfect world, this is a completely legible statement. In reality however, several things distort this perfection. My lens most likely introduces some level of _blur_ to this image. Such blur may assume different shapes depending on the lens, but forget about that and think of what happens if my camera moves ever so slightly while the scene is recorded?
+
+Well, you've probably heard already, this is going to cause motion blur in you image. Nothing new either, I should suppose. The cool part however begins when we accept that this line I'm recording in my camera is a perfect description of what motion my camera was subject to while recording the image.
+
+What we wanted to have was a sharp pixel of value value (255,255,255), but what we got was a straight line of 10 pixels at value (25,25,25). The lower light happens because each of the lit pixels only were lit 1/10th of the time our original perfect pixel would have been lit. 
+
+In this case we know the perfect situation, and we have the recorded "unperfect" situation. Further, I argue that there is a relationship between these two images that can be quantitatively described, and there is also a means to go back and forth between the two images by by performing som matrix arithmetic on them. Cool?
+
+This means that when the relationship between a distorted image and a clean image is known, we can perfectly reconstruct the clean image.;
+":<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Petter's site - Computational Science in Imaging</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
+    <meta name="generator" content="nanoc 3.1.7">
+  </head>
+  <body>
+    <div id="top">
+      <ul>
+	<!-- Sort all items by date -->
+	<!-- Calculate topbar menu items -->
+	
+	
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	
+	  <!-- &#124 <hspace=10> <a href="/blog/index.html">blog</a> -->
+	  
+	    <li><a href="/blog/index.html" title="">blog</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/programming/index.html">programming</a> -->
+	  
+	    <li><a href="/programming/index.html" title="">programming</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/home/index.html">home</a> -->
+	  
+	    <li><a href="/home/index.html" title="">home</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/education/index.html">education</a> -->
+	  
+	    <li><a href="/education/index.html" title="" class="active">education</a></li>
+	  
+        
+      </ul>
+    </div>
+    
+    <div id="sidebar">
+      <h2>Contents</h2>
+      <ul>
+      
+          <li><a href="/education/">My Education</a></li>
+      
+          <li><a href="/education/imaging/">Computational Science in Imaging</a></li>
+      
+      </ul>
+      <h2>Credits</h2>
+      <ul>
+        <li><a href="http://www.scientificlinux.org">Scientific Linux</a></li>
+        <li><a href="http://nanoc.stoneship.org">nanoc web publishing system</a></li>
+      </ul>
+    </div>
+    <div id="main">
+      <p>Tags: <a class="tag" href="/tags/numericmath/">numericmath</a> <a class="tag" href="/tags/imageprocessing/">imageprocessing</a> </p>
+      <h1 id="computational-science-in-imaging">Computational Science in Imaging</h1>
+
+<p>This subject introduced me to the image deblurring problem. The problem at hand was deblurring an image which had been blurred due to linear motion while the camera shutter was open (commonly known as a shake-hand photo). Any image blur can be described by the blurring kernel or Point Spread Function (<a href="http://en.wikipedia.org/wiki/Point_spread_function">PSF</a>), and if this is known one can simply deconvolve the blurred image to get the original unblurred image.</p>
+
+<h2 id="read-this-if-that-sounded-greek">Read this if that sounded greek</h2>
+<p>The PSF for camera motion blur can best be described by a line. To understand what that means, consider the following thought experiment. If I photograph the night sky, it is completely dark except one bright shining star. As luck has it, this star, when projected onto the sensor of my camera, fills exactly one pixel somewhere at the center of the image. This pixel is completely white and assumes an RGB value of (255,255,255). That means that the recorded scene is 100% of each of the colors red, green and blue. Together that is perceived as the whitest white my computer screen can display.</p>
+
+<p>In a perfect world, this is a completely legible statement. In reality however, several things distort this perfection. My lens most likely introduces some level of <em>blur</em> to this image. Such blur may assume different shapes depending on the lens, but forget about that and think of what happens if my camera moves ever so slightly while the scene is recorded?</p>
+
+<p>Well, you&rsquo;ve probably heard already, this is going to cause motion blur in you image. Nothing new either, I should suppose. The cool part however begins when we accept that this line I&rsquo;m recording in my camera is a perfect description of what motion my camera was subject to while recording the image.</p>
+
+<p>What we wanted to have was a sharp pixel of value value (255,255,255), but what we got was a straight line of 10 pixels at value (25,25,25). The lower light happens because each of the lit pixels only were lit 1/10th of the time our original perfect pixel would have been lit. </p>
+
+<p>In this case we know the perfect situation, and we have the recorded &ldquo;unperfect&rdquo; situation. Further, I argue that there is a relationship between these two images that can be quantitatively described, and there is also a means to go back and forth between the two images by by performing som matrix arithmetic on them. Cool?</p>
+
+<p>This means that when the relationship between a distorted image and a clean image is known, we can perfectly reconstruct the clean image.</p>
+
+      <p align="right"><i>Posted 2 Jan 2011</i></p>
+      
+    
+      </div>
+    </div>
+  </body>
+</html>
+;"¢
+<h1 id="computational-science-in-imaging">Computational Science in Imaging</h1>
+
+<p>This subject introduced me to the image deblurring problem. The problem at hand was deblurring an image which had been blurred due to linear motion while the camera shutter was open (commonly known as a shake-hand photo). Any image blur can be described by the blurring kernel or Point Spread Function (<a href="http://en.wikipedia.org/wiki/Point_spread_function">PSF</a>), and if this is known one can simply deconvolve the blurred image to get the original unblurred image.</p>
+
+<h2 id="read-this-if-that-sounded-greek">Read this if that sounded greek</h2>
+<p>The PSF for camera motion blur can best be described by a line. To understand what that means, consider the following thought experiment. If I photograph the night sky, it is completely dark except one bright shining star. As luck has it, this star, when projected onto the sensor of my camera, fills exactly one pixel somewhere at the center of the image. This pixel is completely white and assumes an RGB value of (255,255,255). That means that the recorded scene is 100% of each of the colors red, green and blue. Together that is perceived as the whitest white my computer screen can display.</p>
+
+<p>In a perfect world, this is a completely legible statement. In reality however, several things distort this perfection. My lens most likely introduces some level of <em>blur</em> to this image. Such blur may assume different shapes depending on the lens, but forget about that and think of what happens if my camera moves ever so slightly while the scene is recorded?</p>
+
+<p>Well, you&rsquo;ve probably heard already, this is going to cause motion blur in you image. Nothing new either, I should suppose. The cool part however begins when we accept that this line I&rsquo;m recording in my camera is a perfect description of what motion my camera was subject to while recording the image.</p>
+
+<p>What we wanted to have was a sharp pixel of value value (255,255,255), but what we got was a straight line of 10 pixels at value (25,25,25). The lower light happens because each of the lit pixels only were lit 1/10th of the time our original perfect pixel would have been lit. </p>
+
+<p>In this case we know the perfect situation, and we have the recorded &ldquo;unperfect&rdquo; situation. Further, I argue that there is a relationship between these two images that can be quantitatively described, and there is also a means to go back and forth between the two images by by performing som matrix arithmetic on them. Cool?</p>
+
+<p>This means that when the relationship between a distorted image and a clean image is known, we can perfectly reconstruct the clean image.</p>
+;	@l"/tags/education/{;{	;"æ<p>1 item is tagged with <em>education</em>:</p>
+    <ul>
+      <% articles_tagged_with('education').each do |a| %>
+        <li><%= link_to(a[:title], a) %></li>   
+      <% end %>
+    </ul>;
+"0<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Petter's site - Tag: education</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
+    <meta name="generator" content="nanoc 3.1.7">
+  </head>
+  <body>
+    <div id="top">
+      <ul>
+	<!-- Sort all items by date -->
+	<!-- Calculate topbar menu items -->
+	
+	
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	
+	  <!-- &#124 <hspace=10> <a href="/blog/index.html">blog</a> -->
+	  
+	    <li><a href="/blog/index.html" title="">blog</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/programming/index.html">programming</a> -->
+	  
+	    <li><a href="/programming/index.html" title="">programming</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/home/index.html">home</a> -->
+	  
+	    <li><a href="/home/index.html" title="">home</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/education/index.html">education</a> -->
+	  
+	    <li><a href="/education/index.html" title="">education</a></li>
+	  
+        
+      </ul>
+    </div>
+    
+    <div id="sidebar">
+      <h2>Contents</h2>
+      <ul>
+      
+          <li><a href="/tags/terminal/">Tag: terminal</a></li>
+      
+          <li><a href="/tags/numericmath/">Tag: numericmath</a></li>
+      
+          <li><a href="/tags/education/">Tag: education</a></li>
+      
+          <li><a href="/tags/fun/">Tag: fun</a></li>
+      
+          <li><a href="/tags/emacs/">Tag: emacs</a></li>
+      
+          <li><a href="/tags/blog/">Tag: blog</a></li>
+      
+          <li><a href="/tags/email/">Tag: email</a></li>
+      
+          <li><a href="/tags/programming/">Tag: programming</a></li>
+      
+          <li><a href="/tags/testing/">Tag: testing</a></li>
+      
+          <li><a href="/tags/RCHelicopter/">Tag: RCHelicopter</a></li>
+      
+          <li><a href="/tags/imageprocessing/">Tag: imageprocessing</a></li>
+      
+          <li><a href="/tags/lisp/">Tag: lisp</a></li>
+      
+      </ul>
+      <h2>Credits</h2>
+      <ul>
+        <li><a href="http://www.scientificlinux.org">Scientific Linux</a></li>
+        <li><a href="http://nanoc.stoneship.org">nanoc web publishing system</a></li>
+      </ul>
+    </div>
+    <div id="main">
+      <p>Tags: </p>
+      <p>1 item is tagged with <em>education</em>:</p>
+    <ul>
+      
+        <li><a href="/education/">My Education</a></li>   
+      
+    </ul>
+      <p align="right"><i>Posted 01 Jan 2000</i></p>
+      
+    
+      </div>
+    </div>
+  </body>
+</html>
+;"å<p>1 item is tagged with <em>education</em>:</p>
+    <ul>
+      
+        <li><a href="/education/">My Education</a></li>   
+      
+    </ul>;	@r"/home/img/P1000723_1/{;{ ;{ ;{ "/tags/fun/{;{	;"≤<p>1 item is tagged with <em>fun</em>:</p>
+    <ul>
+      <% articles_tagged_with('fun').each do |a| %>
+        <li><%= link_to(a[:title], a) %></li>   
+      <% end %>
+    </ul>;
+"/<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Petter's site - Tag: fun</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
+    <meta name="generator" content="nanoc 3.1.7">
+  </head>
+  <body>
+    <div id="top">
+      <ul>
+	<!-- Sort all items by date -->
+	<!-- Calculate topbar menu items -->
+	
+	
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	
+	  <!-- &#124 <hspace=10> <a href="/blog/index.html">blog</a> -->
+	  
+	    <li><a href="/blog/index.html" title="">blog</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/programming/index.html">programming</a> -->
+	  
+	    <li><a href="/programming/index.html" title="">programming</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/home/index.html">home</a> -->
+	  
+	    <li><a href="/home/index.html" title="">home</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/education/index.html">education</a> -->
+	  
+	    <li><a href="/education/index.html" title="">education</a></li>
+	  
+        
+      </ul>
+    </div>
+    
+    <div id="sidebar">
+      <h2>Contents</h2>
+      <ul>
+      
+          <li><a href="/tags/terminal/">Tag: terminal</a></li>
+      
+          <li><a href="/tags/numericmath/">Tag: numericmath</a></li>
+      
+          <li><a href="/tags/education/">Tag: education</a></li>
+      
+          <li><a href="/tags/fun/">Tag: fun</a></li>
+      
+          <li><a href="/tags/emacs/">Tag: emacs</a></li>
+      
+          <li><a href="/tags/blog/">Tag: blog</a></li>
+      
+          <li><a href="/tags/email/">Tag: email</a></li>
+      
+          <li><a href="/tags/programming/">Tag: programming</a></li>
+      
+          <li><a href="/tags/testing/">Tag: testing</a></li>
+      
+          <li><a href="/tags/RCHelicopter/">Tag: RCHelicopter</a></li>
+      
+          <li><a href="/tags/imageprocessing/">Tag: imageprocessing</a></li>
+      
+          <li><a href="/tags/lisp/">Tag: lisp</a></li>
+      
+      </ul>
+      <h2>Credits</h2>
+      <ul>
+        <li><a href="http://www.scientificlinux.org">Scientific Linux</a></li>
+        <li><a href="http://nanoc.stoneship.org">nanoc web publishing system</a></li>
+      </ul>
+    </div>
+    <div id="main">
+      <p>Tags: </p>
+      <p>1 item is tagged with <em>fun</em>:</p>
+    <ul>
+      
+        <li><a href="/blog/helicopter/">My new helicopter</a></li>   
+      
+    </ul>
+      <p align="right"><i>Posted 01 Jan 2000</i></p>
+      
+    
+      </div>
+    </div>
+  </body>
+</html>
+;"ë<p>1 item is tagged with <em>fun</em>:</p>
+    <ul>
+      
+        <li><a href="/blog/helicopter/">My new helicopter</a></li>   
+      
+    </ul>;	@}"/stylesheet/{;{;">&* {
+  margin: 0;
+  padding: 0;
+
+  /*font-family: Georgia, Palatino, Times, 'Times New Roman', sans-serif;*/
+}
+
+a {
+  text-decoration: none;
+}
+/*
+a:link,
+a:visited {
+  color: #f30;
+}
+
+a:hover {
+  color: #f90;
+}*/
+
+body {/*background-image:url("/background/Grey_Background.jpg"); */
+     background: rgb(0,0,0);
+     font-family: Palatino, Times, 'Times New Roman', sans-serif;
+}
+
+a { outline:none; }
+
+h1 { font: bold 30px/30px Helvetica, Arial, Sans-serif; 
+     text-align: left; 
+     color: #222; 
+     text-shadow: 0px 2px 6px #333; 
+     margin-bottom: 12px; }
+
+h1 small{ font-size: 20px; text-transform:uppercase; letter-spacing: 14px; display: block; color: #222; }
+
+h2 a { display: block; text-decoration: none; margin: 0 0 30px 0; font: italic 25px Georgia, Times, Serif;  text-align: right; color: #bfe1f1; text-shadow: 0px 2px 6px #333; }
+h2 a:hover { color: #90bcd0; }
+
+hr
+{
+    background-color: #ccc;
+    border: 0 none;
+    color: #999;
+    height: 1px;
+}
+
+#top {
+  margin:40px 0 0 240px;
+  width: 600px;
+}
+
+#top ul { list-style:none; }
+#top ul li { display:inline; float:left; margin-bottom:20px; }
+
+/* background color set to RGBA, with opacity on 0.3 and also using text-shadow */
+#top ul li a { padding:20px; background: rgba(210,210,210,0.95); text-decoration: none; font: bold 14px Helvetica, Sans-Serif; letter-spacing: -1px; color: #222 /*#402e16*/;
+    text-shadow: #444 0px 0px 2px; }
+
+/* hover state shows a linear gradient and opacity it 
+   brought down to 0.9 and also shows a very slight grey shadow on top */
+
+#top ul li a:hover { -moz-box-shadow: 0 -5px 10px #777; -webkit-box-shadow: 0 -5px 10px #777;
+   background: -webkit-gradient(
+      linear, right bottom, left top, color-stop(0, rgb(210,210,210), color-stop(0.72, rgb(255,255,255)))) !important;
+   background: -moz-linear-gradient(
+      right bottom, rgb(210,210,210) 0%, rgb(255,255,255) 72%) !important;
+   background-color:rgb(190,190,190) !important;
+   -moz-opacity:.90; filter:alpha(opacity=90); opacity:.90; }
+ 
+/* another RGBA background, now with an opacity of 0.8 */
+#top ul li a.active { background: rgba(255,255,255,1) !important; }
+
+/* :first-child pseudo selector with rounded top left corner */
+#top ul li:first-child a { -moz-border-radius-topleft: 12px; -webkit-border-top-left-radius:12px; }
+ 
+/* :last-child pseudo selector with rounded top right corner */
+#top ul li:last-child a { -moz-border-radius-topright: 12px; -webkit-border-top-right-radius:12px; }
+
+#sidebar {
+    clear:both;
+    float: left;
+    width: 200px;
+    padding: 20px;
+
+/*border-right: 1px solid #ccc; */
+
+    text-align: right;
+}
+
+#sidebar h2 {
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #eee;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+
+#sidebar a {
+    color: #eee;
+}
+
+#sidebar ul {
+  list-style-type: none;
+
+  margin: 20px 0;
+}
+
+#sidebar li {
+  font-size: 14px;
+
+  line-height: 20px;
+}
+
+/* main contents with RGBA background (same colour as active tab) and three rounded corners */
+#main { float: left;
+	background: rgb(255,255,255);
+/*	background: rgba(255,139,30,0.8);*/ 
+	width:600px;
+	text-align: left;
+	padding: 20px;
+	/* margin-left:250px; */
+	-moz-border-radius-topright: 12px; 
+	-moz-border-radius-bottomright: 12px; 
+	-moz-border-radius-bottomleft: 12px;
+	-webkit-border-top-right-radius:12px; 
+	-webkit-border-bottom-right-radius:12px; 
+	-webkit-border-bottom-left-radius:12px;}
+   
+/* header with a text-shadow */
+#main h2 { font: bold 20px/20px Helvetica, Arial, Sans-serif; 
+     text-align: left; 
+     color: #000; 
+     text-shadow: 0px 2px 6px #333;
+     padding: 0 0 10px 0; }
+
+#main h3 { text-transform:uppercase; padding: 0 15px 0 0; color:#000; text-shadow: #000 0px 0px 2px; }
+#main p { padding-bottom:20px; /*color:#eee;*/ color:#000 }
+#main p.nopadding { padding-bottom:8px; color:#000; }
+
+table {
+    border: 1px solid #A65A00;
+    background-color: #BF7F30;
+        width: 100%;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+    margin-bottom: 20px;
+}
+table td, table th {
+    padding: 5px;
+    color: #eee;
+}
+table thead {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    padding: .2em 0 .2em .5em;
+    text-align: left;
+    color: #eee;
+    background-color: #A65A00;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#BF7E30), to(#BF7E30), color-stop(.6,#A65A00));
+    background-image: -moz-linear-gradient(top, #BF7E30, #A65A00, #BF7E30 90%);
+    border-bottom: solid 1px #A65A00;
+}
+table th {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 20px;
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+    text-shadow: white 1px 1px 1px;
+}
+table td {
+    line-height: 20px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    border-top: 1px solid #A65A00;
+}
+/*
+table td:hover {
+    background-color: #fff;
+}*/
+
+
+
+.CodeRay {
+  background-color: #FFF;
+  border: 1px solid #CCC;
+  line-height: 1.3em;
+  font-size: 13px;
+  font-family: "Courier",monospace;
+  color: #000;
+  padding: 1em 0px 1em 1em;
+}
+.CodeRay pre, .CodeRay code {
+  padding: 0;
+  margin: 0;
+}
+
+div.CodeRay {
+  padding: 0;
+  margin-bottom: 20px;
+  font-family:"Courier",monospace;
+}
+
+span.CodeRay { white-space: pre; border: 0px; padding: 2px }
+
+table.CodeRay { border-collapse: collapse; width: 100%; padding: 2px; margin-bottom: 20px; }
+table.CodeRay td {
+  padding: 1em 0.5em;
+  vertical-align: top;
+}
+
+.CodeRay .line-numbers, .CodeRay .no {
+  border: 1px solid #ECECEC;
+  margin: 0 inherit;
+  background-color: #ECECEC;
+  color: #AAA;
+  padding: 0px 7px;
+  text-align: right;
+}
+.CodeRay .line-numbers tt { font-weight: bold }
+.CodeRay .line-numbers .highlighted { color: red }
+.CodeRay .line { display: block; float: left; width: 100%; }
+.CodeRay .no { padding: 0px 4px }
+.CodeRay .code { width: 100% 
+	         font: }
+
+ol.CodeRay { font-size: 10pt }
+ol.CodeRay li { white-space: pre }
+
+.CodeRay .code pre { overflow: auto }
+
+.CodeRay .debug { color:white ! important; background:blue ! important; }
+
+.CodeRay .attribute-name-fat { color:#00C }
+.CodeRay .attribute-name { color:#007 }
+.CodeRay .annotation { color:#f08 }
+.CodeRay .attribute-value { color:#700 }
+.CodeRay .attribute-value-fat { color:#C00 }
+.CodeRay .binary { color:#509; font-weight:bold }
+.CodeRay .comment { color:#998; font-style: italic;}
+
+.CodeRay .char { color:#04D }
+.CodeRay .ch .content { color:#04D }
+.CodeRay .ch .delimiter { color:#039 }
+
+.CodeRay .class { color:#458; font-weight:bold }
+.CodeRay .complex { color:#A08; font-weight:bold }
+.CodeRay .constant { color:teal; }
+.CodeRay .color { color:#0A0 }
+.CodeRay .class-variable { color:#369 }
+.CodeRay .decorator { color:#B0B; }
+.CodeRay .definition { color:#099; font-weight:bold }
+.CodeRay .directive { color:#088; font-weight:bold }
+.CodeRay .delimiter { color:black }
+.CodeRay .doc { color:#970 }
+.CodeRay .doc-type { color:#34b }
+.CodeRay .doc-string { color:#D42; font-weight:bold }
+.CodeRay .escape { color:#666; font-weight:bold }
+.CodeRay .entity { color:#800; font-weight:bold }
+.CodeRay .error { color:#F00; background-color:#FAA }
+.CodeRay .exception { color:#C00; font-weight:bold }
+.CodeRay .float { color:#099; }
+.CodeRay .function { color:#900; font-weight:bold }
+.CodeRay .global-variable { color:teal; font-weight:bold }
+.CodeRay .hex { color:#058; font-weight:bold }
+.CodeRay .imaginary { color:#099; }
+.CodeRay .include { color:#B44; font-weight:bold }
+
+.CodeRay .inline { color: black }
+.CodeRay .inline .inline { background: #ccc }
+.CodeRay .inline .inline .inline { background: #bbb }
+.CodeRay .inline .inline-delimiter { color: #D14; }
+.CodeRay .inline-delimiter { color: #D14; }
+
+.CodeRay .imaginary { color:#f00; }
+.CodeRay .include { color:#B2B; font-weight:bold }
+.CodeRay .instance-variable { color:teal }
+.CodeRay .label { color:#970; font-weight:bold }
+.CodeRay .local-variable { color:#963 }
+.CodeRay .octal { color:#40E; font-weight:bold }
+.CodeRay .operator-fat { color:#000; font-weight:bold }
+.CodeRay .operator { }
+.CodeRay .predefined-constant { font-weight:bold }
+.CodeRay .predefined { color:#369; font-weight:bold }
+.CodeRay .preprocessor { color:#579; }
+.CodeRay .pseudo-class { color:#00C; font-weight:bold }
+.CodeRay .predefined-type { color:#074; font-weight:bold }
+.CodeRay .reserved, .keyword { color:#000; font-weight:bold }
+
+.CodeRay .key { color: #808; }
+.CodeRay .key .delimiter { color: #606; }
+.CodeRay .key .char { color: #80f; }
+.CodeRay .value { color: #088; }
+
+.CodeRay .regexp { background-color:#fff0ff }
+.CodeRay .regexp .content { color:#808 }
+.CodeRay .regexp .delimiter { color:#404 }
+.CodeRay .regexp .modifier { color:#C2C }
+.CodeRay .regexp .function { color:#404; font-weight: bold }
+
+.CodeRay .string { color: #D20; }
+.CodeRay .string .content { color: #D14; }
+.CodeRay .string .char { color: #D14; }
+.CodeRay .string .delimiter { color: #D14; }
+
+.CodeRay .shell { color:#D14 }
+.CodeRay .shell .content { }
+.CodeRay .shell .delimiter { color:#D14 }
+
+.CodeRay .symbol { color:#990073 }
+.CodeRay .symbol .content { color:#A60 }
+.CodeRay .symbol .delimiter { color:#630 }
+
+.CodeRay .tag { color:#070 }
+.CodeRay .tag-fat { color:#070; font-weight:bold }
+.CodeRay .tag-special { color:#D70; font-weight:bold }
+.CodeRay .type { color:#339; font-weight:bold }
+.CodeRay .variable { color:#036 }
+.CodeRay .xml-text { color:#444 }
+
+.CodeRay .insert { background: #afa; }
+.CodeRay .delete { background: #faa; }
+.CodeRay .change { color: #aaf; background: #007; }
+.CodeRay .head { color: #f8f; background: #505 }
+
+.CodeRay .insert .insert { color: #080; font-weight:bold }
+.CodeRay .delete .delete { color: #800; font-weight:bold }
+.CodeRay .change .change { color: #66f; }
+.CodeRay .head .head { color: #f4f; };@};	@}"!/background/Grey_Background/{;{ "/tags/RCHelicopter/{;{	;"ƒ<p>1 item is tagged with <em>RCHelicopter</em>:</p>
+    <ul>
+      <% articles_tagged_with('RCHelicopter').each do |a| %>
+        <li><%= link_to(a[:title], a) %></li>   
+      <% end %>
+    </ul>;
+"A<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Petter's site - Tag: RCHelicopter</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
+    <meta name="generator" content="nanoc 3.1.7">
+  </head>
+  <body>
+    <div id="top">
+      <ul>
+	<!-- Sort all items by date -->
+	<!-- Calculate topbar menu items -->
+	
+	
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	
+	  <!-- &#124 <hspace=10> <a href="/blog/index.html">blog</a> -->
+	  
+	    <li><a href="/blog/index.html" title="">blog</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/programming/index.html">programming</a> -->
+	  
+	    <li><a href="/programming/index.html" title="">programming</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/home/index.html">home</a> -->
+	  
+	    <li><a href="/home/index.html" title="">home</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/education/index.html">education</a> -->
+	  
+	    <li><a href="/education/index.html" title="">education</a></li>
+	  
+        
+      </ul>
+    </div>
+    
+    <div id="sidebar">
+      <h2>Contents</h2>
+      <ul>
+      
+          <li><a href="/tags/terminal/">Tag: terminal</a></li>
+      
+          <li><a href="/tags/numericmath/">Tag: numericmath</a></li>
+      
+          <li><a href="/tags/education/">Tag: education</a></li>
+      
+          <li><a href="/tags/fun/">Tag: fun</a></li>
+      
+          <li><a href="/tags/emacs/">Tag: emacs</a></li>
+      
+          <li><a href="/tags/blog/">Tag: blog</a></li>
+      
+          <li><a href="/tags/email/">Tag: email</a></li>
+      
+          <li><a href="/tags/programming/">Tag: programming</a></li>
+      
+          <li><a href="/tags/testing/">Tag: testing</a></li>
+      
+          <li><a href="/tags/RCHelicopter/">Tag: RCHelicopter</a></li>
+      
+          <li><a href="/tags/imageprocessing/">Tag: imageprocessing</a></li>
+      
+          <li><a href="/tags/lisp/">Tag: lisp</a></li>
+      
+      </ul>
+      <h2>Credits</h2>
+      <ul>
+        <li><a href="http://www.scientificlinux.org">Scientific Linux</a></li>
+        <li><a href="http://nanoc.stoneship.org">nanoc web publishing system</a></li>
+      </ul>
+    </div>
+    <div id="main">
+      <p>Tags: </p>
+      <p>1 item is tagged with <em>RCHelicopter</em>:</p>
+    <ul>
+      
+        <li><a href="/blog/helicopter/">My new helicopter</a></li>   
+      
+    </ul>
+      <p align="right"><i>Posted 01 Jan 2000</i></p>
+      
+    
+      </div>
+    </div>
+  </body>
+</html>
+;"ö<p>1 item is tagged with <em>RCHelicopter</em>:</p>
+    <ul>
+      
+        <li><a href="/blog/helicopter/">My new helicopter</a></li>   
+      
+    </ul>;	@Ö"/tags/email/{;{	;"∂<p>1 item is tagged with <em>email</em>:</p>
+    <ul>
+      <% articles_tagged_with('email').each do |a| %>
+        <li><%= link_to(a[:title], a) %></li>   
+      <% end %>
+    </ul>;
+"D<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Petter's site - Tag: email</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
+    <meta name="generator" content="nanoc 3.1.7">
+  </head>
+  <body>
+    <div id="top">
+      <ul>
+	<!-- Sort all items by date -->
+	<!-- Calculate topbar menu items -->
+	
+	
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	
+	  <!-- &#124 <hspace=10> <a href="/blog/index.html">blog</a> -->
+	  
+	    <li><a href="/blog/index.html" title="">blog</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/programming/index.html">programming</a> -->
+	  
+	    <li><a href="/programming/index.html" title="">programming</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/home/index.html">home</a> -->
+	  
+	    <li><a href="/home/index.html" title="">home</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/education/index.html">education</a> -->
+	  
+	    <li><a href="/education/index.html" title="">education</a></li>
+	  
+        
+      </ul>
+    </div>
+    
+    <div id="sidebar">
+      <h2>Contents</h2>
+      <ul>
+      
+          <li><a href="/tags/terminal/">Tag: terminal</a></li>
+      
+          <li><a href="/tags/numericmath/">Tag: numericmath</a></li>
+      
+          <li><a href="/tags/education/">Tag: education</a></li>
+      
+          <li><a href="/tags/fun/">Tag: fun</a></li>
+      
+          <li><a href="/tags/emacs/">Tag: emacs</a></li>
+      
+          <li><a href="/tags/blog/">Tag: blog</a></li>
+      
+          <li><a href="/tags/email/">Tag: email</a></li>
+      
+          <li><a href="/tags/programming/">Tag: programming</a></li>
+      
+          <li><a href="/tags/testing/">Tag: testing</a></li>
+      
+          <li><a href="/tags/RCHelicopter/">Tag: RCHelicopter</a></li>
+      
+          <li><a href="/tags/imageprocessing/">Tag: imageprocessing</a></li>
+      
+          <li><a href="/tags/lisp/">Tag: lisp</a></li>
+      
+      </ul>
+      <h2>Credits</h2>
+      <ul>
+        <li><a href="http://www.scientificlinux.org">Scientific Linux</a></li>
+        <li><a href="http://nanoc.stoneship.org">nanoc web publishing system</a></li>
+      </ul>
+    </div>
+    <div id="main">
+      <p>Tags: </p>
+      <p>1 item is tagged with <em>email</em>:</p>
+    <ul>
+      
+        <li><a href="/programming/emacs-email/">How to read email in emacs</a></li>   
+      
+    </ul>
+      <p align="right"><i>Posted 01 Jan 2000</i></p>
+      
+    
+      </div>
+    </div>
+  </body>
+</html>
+;"§<p>1 item is tagged with <em>email</em>:</p>
+    <ul>
+      
+        <li><a href="/programming/emacs-email/">How to read email in emacs</a></li>   
+      
+    </ul>;	@ã"/education/{;{	;"˛My Education
+============
+
+I graduated in 2009 at [University of Stavanger](http://www.uis.no) as a Master of Technology, Cybernetics and Signal Processing.
+
+The bachelor degree gave me sound insight in digital control and communications. The subsequent master's degree was more focused on topics such as signal/image processing, optimization, numerical maths and advanced control theory. 
+
+You can read more about some of the specific classes I took and browse the assignments I've handed in during the years.;
+"#<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Petter's site - My Education</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
+    <meta name="generator" content="nanoc 3.1.7">
+  </head>
+  <body align="center">
+    <div id="top">
+      <ul>
+	<!-- Sort all items by date -->
+	<!-- Calculate topbar menu items -->
+	
+	
+	    
+	
+	    
+	
+	  
+            
+	    
+	
+	    
+	
+	  
+            
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	  
+            
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	  
+            
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	
+	  <!-- &#124 <hspace=10> <a href="/blog/index.html">blog</a> -->
+	  
+	    <li><a href="/blog/index.html" title="">blog</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/programming/index.html">programming</a> -->
+	  
+	    <li><a href="/programming/index.html" title="">programming</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/home/index.html">home</a> -->
+	  
+	    <li><a href="/home/index.html" title="">home</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/education/index.html">education</a> -->
+	  
+	    <li><a href="/education/index.html" title="" class="active">education</a></li>
+	  
+        
+      </ul>
+    </div>
+      
+    <div id="sidebar">
+      <h2>Contents</h2>
+      <ul>
+      
+          <li><a href="/education/">My Education</a></li>
+      
+          <li><a href="/education/imaging/">Computational Science in Imaging</a></li>
+      
+      </ul>
+      <p></p>
+      <h2 padding-top="40px">Credits</h2>
+      <ul>
+        <li><a href="http://www.scientificlinux.org">Scientific Linux</a></li>
+        <li><a href="http://nanoc.stoneship.org">nanoc web publishing system</a></li>
+      </ul>
+    </div>
+    <div id="main">
+      <h1 id="my-education">My Education</h1>
+
+<p>I graduated in 2009 at <a href="http://www.uis.no">University of Stavanger</a> as a Master of Technology, Cybernetics and Signal Processing.</p>
+
+<p>The bachelor degree gave me sound insight in digital control and communications. The subsequent master&rsquo;s degree was more focused on topics such as signal/image processing, optimization, numerical maths and advanced control theory. </p>
+
+<p>You can read more about some of the specific classes I took and browse the assignments I&rsquo;ve handed in during the years.</p>
+
+      <p><hr></p>
+      
+        
+      
+        
+          <h3>Computational Science in Imaging</h3>
+	  
+            <p class="nopadding" align="right"><i>2 Jan 2011</i></p>
+	  
+          <p>Computation Science in Imaging was a very interesting subject teaching us the causes of and remedies for image blurring.</p>
+	  <p align="right"><a href="/education/imaging/">Read more...</a> 
+	  <hr></p>
+	
+      
+    </div>
+  </body>
+</html>
+;"9<h1 id="my-education">My Education</h1>
+
+<p>I graduated in 2009 at <a href="http://www.uis.no">University of Stavanger</a> as a Master of Technology, Cybernetics and Signal Processing.</p>
+
+<p>The bachelor degree gave me sound insight in digital control and communications. The subsequent master&rsquo;s degree was more focused on topics such as signal/image processing, optimization, numerical maths and advanced control theory. </p>
+
+<p>You can read more about some of the specific classes I took and browse the assignments I&rsquo;ve handed in during the years.</p>
+;	@ë"/blog/helicopter/{;{	;"∫My New Helicopter
+=================
+
+Wow, I actually got the [eSky Belt CP CX](http://www.youtube.com/watch?v=ajCgH5-Kx6A) for my 30th birthday. Thank you Ingvild :-) Pics from the first outing found [here](../../Galleries/Helicopter outing/index.html).
+
+![Helicopter](../img/heli_large.jpg)
+
+As a pilot with only a few hours behind the controller, I think it generally flies very well. My only point of reference is my old Walkera Dragonfly 4, whose twitchy electronics and shoddy components generally failed when flying outdoors. This baby had no problems in light wind.
+
+I have to admit though that I'm not entirely innocent in the case of the Walkera failing. It is my modifications to a more agile main rotor motor that may have caused the 4-in-1 mixer to fail. Or perhaps the step-up from 7.4V to 11.1V battery was the culprit. Who knows?
+
+That chopper is now grounded, I'm not investing in a new 4-in-1.
+
+I will post more flight experiences later.;
+"0<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Petter's site - My new helicopter</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
+    <meta name="generator" content="nanoc 3.1.7">
+  </head>
+  <body>
+    <div id="top">
+      <ul>
+	<!-- Sort all items by date -->
+	<!-- Calculate topbar menu items -->
+	
+	
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	
+	  <!-- &#124 <hspace=10> <a href="/blog/index.html">blog</a> -->
+	  
+	    <li><a href="/blog/index.html" title="" class="active">blog</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/programming/index.html">programming</a> -->
+	  
+	    <li><a href="/programming/index.html" title="">programming</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/home/index.html">home</a> -->
+	  
+	    <li><a href="/home/index.html" title="">home</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/education/index.html">education</a> -->
+	  
+	    <li><a href="/education/index.html" title="">education</a></li>
+	  
+        
+      </ul>
+    </div>
+    
+    <div id="sidebar">
+      <h2>Contents</h2>
+      <ul>
+      
+          <li><a href="/blog/">Main page</a></li>
+      
+          <li><a href="/blog/first_post/">First post</a></li>
+      
+          <li><a href="/blog/helicopter/">My new helicopter</a></li>
+      
+      </ul>
+      <h2>Credits</h2>
+      <ul>
+        <li><a href="http://www.scientificlinux.org">Scientific Linux</a></li>
+        <li><a href="http://nanoc.stoneship.org">nanoc web publishing system</a></li>
+      </ul>
+    </div>
+    <div id="main">
+      <p>Tags: <a class="tag" href="/tags/RCHelicopter/">RCHelicopter</a> <a class="tag" href="/tags/fun/">fun</a> </p>
+      <h1 id="my-new-helicopter">My New Helicopter</h1>
+
+<p>Wow, I actually got the <a href="http://www.youtube.com/watch?v=ajCgH5-Kx6A">eSky Belt CP CX</a> for my 30th birthday. Thank you Ingvild :-) Pics from the first outing found <a href="../../Galleries/Helicopter outing/index.html">here</a>.</p>
+
+<p><img src="../img/heli_large.jpg" alt="Helicopter" /></p>
+
+<p>As a pilot with only a few hours behind the controller, I think it generally flies very well. My only point of reference is my old Walkera Dragonfly 4, whose twitchy electronics and shoddy components generally failed when flying outdoors. This baby had no problems in light wind.</p>
+
+<p>I have to admit though that I&rsquo;m not entirely innocent in the case of the Walkera failing. It is my modifications to a more agile main rotor motor that may have caused the 4-in-1 mixer to fail. Or perhaps the step-up from 7.4V to 11.1V battery was the culprit. Who knows?</p>
+
+<p>That chopper is now grounded, I&rsquo;m not investing in a new 4-in-1.</p>
+
+<p>I will post more flight experiences later.</p>
+
+      <p align="right"><i>Posted 1 Jan 2011</i></p>
+      
+
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+	/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+	var disqus_shortname = 'petterssite';
+	var disqus_identifier = 'My new helicopter'; 
+	
+	/* * * DON'T EDIT BELOW THIS LINE * * */
+	(function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      
+    
+      </div>
+    </div>
+  </body>
+</html>
+;"%<h1 id="my-new-helicopter">My New Helicopter</h1>
+
+<p>Wow, I actually got the <a href="http://www.youtube.com/watch?v=ajCgH5-Kx6A">eSky Belt CP CX</a> for my 30th birthday. Thank you Ingvild :-) Pics from the first outing found <a href="../../Galleries/Helicopter outing/index.html">here</a>.</p>
+
+<p><img src="../img/heli_large.jpg" alt="Helicopter" /></p>
+
+<p>As a pilot with only a few hours behind the controller, I think it generally flies very well. My only point of reference is my old Walkera Dragonfly 4, whose twitchy electronics and shoddy components generally failed when flying outdoors. This baby had no problems in light wind.</p>
+
+<p>I have to admit though that I&rsquo;m not entirely innocent in the case of the Walkera failing. It is my modifications to a more agile main rotor motor that may have caused the 4-in-1 mixer to fail. Or perhaps the step-up from 7.4V to 11.1V battery was the culprit. Who knows?</p>
+
+<p>That chopper is now grounded, I&rsquo;m not investing in a new 4-in-1.</p>
+
+<p>I will post more flight experiences later.</p>
+;	@ó"/programming/{;{	;"PProgramming
+===========
+
+Some programming tips and tricks to be found here.;
+"†<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Petter's site - Programming</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
+    <meta name="generator" content="nanoc 3.1.7">
+  </head>
+  <body align="center">
+    <div id="top">
+      <ul>
+	<!-- Sort all items by date -->
+	<!-- Calculate topbar menu items -->
+	
+	
+	    
+	
+	    
+	
+	  
+            
+	    
+	
+	    
+	
+	  
+            
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	  
+            
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	  
+            
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	
+	  <!-- &#124 <hspace=10> <a href="/blog/index.html">blog</a> -->
+	  
+	    <li><a href="/blog/index.html" title="">blog</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/programming/index.html">programming</a> -->
+	  
+	    <li><a href="/programming/index.html" title="" class="active">programming</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/home/index.html">home</a> -->
+	  
+	    <li><a href="/home/index.html" title="">home</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/education/index.html">education</a> -->
+	  
+	    <li><a href="/education/index.html" title="">education</a></li>
+	  
+        
+      </ul>
+    </div>
+      
+    <div id="sidebar">
+      <h2>Contents</h2>
+      <ul>
+      
+          <li><a href="/programming/emacs-email/">How to read email in emacs</a></li>
+      
+          <li><a href="/programming/emacs/">Emacs, gdb and pretty printing</a></li>
+      
+          <li><a href="/programming/">Programming</a></li>
+      
+      </ul>
+      <p></p>
+      <h2 padding-top="40px">Credits</h2>
+      <ul>
+        <li><a href="http://www.scientificlinux.org">Scientific Linux</a></li>
+        <li><a href="http://nanoc.stoneship.org">nanoc web publishing system</a></li>
+      </ul>
+    </div>
+    <div id="main">
+      <h1 id="programming">Programming</h1>
+
+<p>Some programming tips and tricks to be found here.</p>
+
+      <p><hr></p>
+      
+        
+          <h3>How to read email in emacs</h3>
+	  
+            <p class="nopadding" align="right"><i>07 Jun 2012</i></p>
+	  
+          <p>Ok, so you've stumbled across emacs' native email capabilities and found them convoluted and difficult to use. I present a different approach, leveraging the power of the multi-term smart emacs terminal to run you favorite email client, alpine presumably, within emacs.</p>
+	  <p align="right"><a href="/programming/emacs-email/">Read more...</a> 
+	  <hr></p>
+	
+      
+        
+          <h3>Emacs, gdb and pretty printing</h3>
+	  
+            <p class="nopadding" align="right"><i>15 May 2012</i></p>
+	  
+          <p>I think everyone and his dog should start using emacs as their main text editor. Because it really is that good.</p>
+	  <p align="right"><a href="/programming/emacs/">Read more...</a> 
+	  <hr></p>
+	
+      
+        
+      
+    </div>
+  </body>
+</html>
+;"f<h1 id="programming">Programming</h1>
+
+<p>Some programming tips and tricks to be found here.</p>
+;	@ù"/tags/terminal/{;{	;"º<p>1 item is tagged with <em>terminal</em>:</p>
+    <ul>
+      <% articles_tagged_with('terminal').each do |a| %>
+        <li><%= link_to(a[:title], a) %></li>   
+      <% end %>
+    </ul>;
+"J<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Petter's site - Tag: terminal</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
+    <meta name="generator" content="nanoc 3.1.7">
+  </head>
+  <body>
+    <div id="top">
+      <ul>
+	<!-- Sort all items by date -->
+	<!-- Calculate topbar menu items -->
+	
+	
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	
+	  <!-- &#124 <hspace=10> <a href="/blog/index.html">blog</a> -->
+	  
+	    <li><a href="/blog/index.html" title="">blog</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/programming/index.html">programming</a> -->
+	  
+	    <li><a href="/programming/index.html" title="">programming</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/home/index.html">home</a> -->
+	  
+	    <li><a href="/home/index.html" title="">home</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/education/index.html">education</a> -->
+	  
+	    <li><a href="/education/index.html" title="">education</a></li>
+	  
+        
+      </ul>
+    </div>
+    
+    <div id="sidebar">
+      <h2>Contents</h2>
+      <ul>
+      
+          <li><a href="/tags/terminal/">Tag: terminal</a></li>
+      
+          <li><a href="/tags/numericmath/">Tag: numericmath</a></li>
+      
+          <li><a href="/tags/education/">Tag: education</a></li>
+      
+          <li><a href="/tags/fun/">Tag: fun</a></li>
+      
+          <li><a href="/tags/emacs/">Tag: emacs</a></li>
+      
+          <li><a href="/tags/blog/">Tag: blog</a></li>
+      
+          <li><a href="/tags/email/">Tag: email</a></li>
+      
+          <li><a href="/tags/programming/">Tag: programming</a></li>
+      
+          <li><a href="/tags/testing/">Tag: testing</a></li>
+      
+          <li><a href="/tags/RCHelicopter/">Tag: RCHelicopter</a></li>
+      
+          <li><a href="/tags/imageprocessing/">Tag: imageprocessing</a></li>
+      
+          <li><a href="/tags/lisp/">Tag: lisp</a></li>
+      
+      </ul>
+      <h2>Credits</h2>
+      <ul>
+        <li><a href="http://www.scientificlinux.org">Scientific Linux</a></li>
+        <li><a href="http://nanoc.stoneship.org">nanoc web publishing system</a></li>
+      </ul>
+    </div>
+    <div id="main">
+      <p>Tags: </p>
+      <p>1 item is tagged with <em>terminal</em>:</p>
+    <ul>
+      
+        <li><a href="/programming/emacs-email/">How to read email in emacs</a></li>   
+      
+    </ul>
+      <p align="right"><i>Posted 01 Jan 2000</i></p>
+      
+    
+      </div>
+    </div>
+  </body>
+</html>
+;"ß<p>1 item is tagged with <em>terminal</em>:</p>
+    <ul>
+      
+        <li><a href="/programming/emacs-email/">How to read email in emacs</a></li>   
+      
+    </ul>;	@£"/home/{;{	;"lWelcome to pkvalvaag.com
+========================
+
+This is my site. I will post stuff that happens in my life and articles about stuff I enjoy.
+
+Most of the stuff is dedicated to diverse topics within computer science. On the blog page I may post stuff from events in my life. Hope you'll enjoy it as much as I enjoyed writing it.
+
+![Meg](img/P1000723_1_small.jpg);
+"¬<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Petter's site - pkvalvaag.com</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
+    <meta name="generator" content="nanoc 3.1.7">
+  </head>
+  <body align="center">
+    <div id="top">
+      <ul>
+	<!-- Sort all items by date -->
+	<!-- Calculate topbar menu items -->
+	
+	
+	    
+	
+	    
+	
+	  
+            
+	    
+	
+	    
+	
+	  
+            
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	  
+            
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	  
+            
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	    
+	
+	
+	  <!-- &#124 <hspace=10> <a href="/blog/index.html">blog</a> -->
+	  
+	    <li><a href="/blog/index.html" title="">blog</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/programming/index.html">programming</a> -->
+	  
+	    <li><a href="/programming/index.html" title="">programming</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/home/index.html">home</a> -->
+	  
+	    <li><a href="/home/index.html" title="" class="active">home</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/education/index.html">education</a> -->
+	  
+	    <li><a href="/education/index.html" title="">education</a></li>
+	  
+        
+      </ul>
+    </div>
+      
+    <div id="sidebar">
+      <h2>Contents</h2>
+      <ul>
+      
+          <li><a href="/home/">pkvalvaag.com</a></li>
+      
+      </ul>
+      <p></p>
+      <h2 padding-top="40px">Credits</h2>
+      <ul>
+        <li><a href="http://www.scientificlinux.org">Scientific Linux</a></li>
+        <li><a href="http://nanoc.stoneship.org">nanoc web publishing system</a></li>
+      </ul>
+    </div>
+    <div id="main">
+      <h1 id="welcome-to-pkvalvaagcom">Welcome to pkvalvaag.com</h1>
+
+<p>This is my site. I will post stuff that happens in my life and articles about stuff I enjoy.</p>
+
+<p>Most of the stuff is dedicated to diverse topics within computer science. On the blog page I may post stuff from events in my life. Hope you&rsquo;ll enjoy it as much as I enjoyed writing it.</p>
+
+<p><img src="img/P1000723_1_small.jpg" alt="Meg" /></p>
+
+      <p><hr></p>
+      
+        
+      
+    </div>
+  </body>
+</html>
+;"•<h1 id="welcome-to-pkvalvaagcom">Welcome to pkvalvaag.com</h1>
+
+<p>This is my site. I will post stuff that happens in my life and articles about stuff I enjoy.</p>
+
+<p>Most of the stuff is dedicated to diverse topics within computer science. On the blog page I may post stuff from events in my life. Hope you&rsquo;ll enjoy it as much as I enjoyed writing it.</p>
+
+<p><img src="img/P1000723_1_small.jpg" alt="Meg" /></p>
+;	@©:versioni
