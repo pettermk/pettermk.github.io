@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Petter's site - Computational Science in Imaging</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
+    <meta name="generator" content="nanoc 3.1.7">
+  </head>
+  <body>
+    <div id="top">
+      <ul>
+	<!-- Sort all items by date -->
+	<!-- Calculate topbar menu items -->
+	
+	
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+            
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	  
+        
+	
+	  <!-- &#124 <hspace=10> <a href="/programming/index.html">programming</a> -->
+	  
+	    <li><a href="/programming/index.html" title="">programming</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/home/index.html">home</a> -->
+	  
+	    <li><a href="/home/index.html" title="">home</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/blog/index.html">blog</a> -->
+	  
+	    <li><a href="/blog/index.html" title="">blog</a></li>
+	  
+        
+	  <!-- &#124 <hspace=10> <a href="/education/index.html">education</a> -->
+	  
+	    <li><a href="/education/index.html" title="" class="active">education</a></li>
+	  
+        
+      </ul>
+    </div>
+    
+    <div id="sidebar">
+      <h2>Contents</h2>
+      <ul>
+      
+          <li><a href="/education/">My Education</a></li>
+      
+          <li><a href="/education/imaging/">Computational Science in Imaging</a></li>
+      
+      </ul>
+      <h2>Credits</h2>
+      <ul>
+        <li><a href="http://www.scientificlinux.org">Scientific Linux</a></li>
+        <li><a href="http://nanoc.stoneship.org">nanoc web publishing system</a></li>
+      </ul>
+    </div>
+    <div id="main">
+      <p>Tags: <a class="tag" href="/tags/numericmath/">numericmath</a> <a class="tag" href="/tags/imageprocessing/">imageprocessing</a> </p>
+      <h1 id="computational-science-in-imaging">Computational Science in Imaging</h1>
+
+<p>This subject introduced me to the image deblurring problem. The problem at hand was deblurring an image which had been blurred due to linear motion while the camera shutter was open (commonly known as a shake-hand photo). Any image blur can be described by the blurring kernel or Point Spread Function (<a href="http://en.wikipedia.org/wiki/Point_spread_function">PSF</a>), and if this is known one can simply deconvolve the blurred image to get the original unblurred image.</p>
+
+<h2 id="read-this-if-that-sounded-greek">Read this if that sounded greek</h2>
+<p>The PSF for camera motion blur can best be described by a line. To understand what that means, consider the following thought experiment. If I photograph the night sky, it is completely dark except one bright shining star. As luck has it, this star, when projected onto the sensor of my camera, fills exactly one pixel somewhere at the center of the image. This pixel is completely white and assumes an RGB value of (255,255,255). That means that the recorded scene is 100% of each of the colors red, green and blue. Together that is perceived as the whitest white my computer screen can display.</p>
+
+<p>In a perfect world, this is a completely legible statement. In reality however, several things distort this perfection. My lens most likely introduces some level of <em>blur</em> to this image. Such blur may assume different shapes depending on the lens, but forget about that and think of what happens if my camera moves ever so slightly while the scene is recorded?</p>
+
+<p>Well, you&rsquo;ve probably heard already, this is going to cause motion blur in you image. Nothing new either, I should suppose. The cool part however begins when we accept that this line I&rsquo;m recording in my camera is a perfect description of what motion my camera was subject to while recording the image.</p>
+
+<p>What we wanted to have was a sharp pixel of value value (255,255,255), but what we got was a straight line of 10 pixels at value (25,25,25). The lower light happens because each of the lit pixels only were lit 1/10th of the time our original perfect pixel would have been lit. </p>
+
+<p>In this case we know the perfect situation, and we have the recorded &ldquo;unperfect&rdquo; situation. Further, I argue that there is a relationship between these two images that can be quantitatively described, and there is also a means to go back and forth between the two images by by performing som matrix arithmetic on them. Cool?</p>
+
+<p>This means that when the relationship between a distorted image and a clean image is known, we can perfectly reconstruct the clean image.</p>
+
+      <p align="right"><i>Posted 2 Jan 2011</i></p>
+      
+    
+      </div>
+    </div>
+  </body>
+</html>
