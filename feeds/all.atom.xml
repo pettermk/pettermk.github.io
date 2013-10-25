@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>A Pelican Blog</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2012-12-01T10:02:00Z</updated><entry><title>A test article</title><link href="/a-test-article.html" rel="alternate"></link><updated>2012-12-01T10:02:00Z</updated><author><name></name></author><id>tag:,2012-12-01:a-test-article.html</id><summary type="html">&lt;p&gt;Test&lt;/p&gt;
+&lt;p&gt;Link and stuff&lt;/p&gt;</summary></entry><entry><title>Emacs, gdb and pretty printing</title><link href="/emacs-gdb-and-pretty-printing.html" rel="alternate"></link><updated>2012-01-01T00:00:00Z</updated><author><name></name></author><id>tag:,2012-01-01:emacs-gdb-and-pretty-printing.html</id><summary type="html">&lt;h1&gt;Emacs, gdb and pretty printing&lt;/h1&gt;
+&lt;p&gt;If you enjoy using Emacs for your C++ coding needs, you might want to know how to use it as a full fledged, powerful C++ debugger&lt;/p&gt;
+&lt;h2&gt;The editor&lt;/h2&gt;
+&lt;p&gt;The emacs editor is based on the idea that you can accomplish anything with the keyboard. While I do find that most IDE actually &lt;em&gt;support&lt;/em&gt; the use of the keyboard through shortcuts, emacs actually &lt;em&gt;forces&lt;/em&gt; you to learn the shortcuts and thus making you (at least me) a more efficient code editor.&lt;/p&gt;
+&lt;p&gt;It also handles indentation very gracefully. Entering a tab character from &lt;em&gt;anywhere on the line&lt;/em&gt; idents the whole line to the appropriate place. I've never seen any other editor do that, and while coding I've never missed the opportunity to insert a tab character somewhere in the line.&lt;/p&gt;
+&lt;p&gt;I've yet to discover a coding style that emacs does not recognize out of the box, so I've never fussed with setting up syntax highlighting or identation. Emacs can also interact with a lot of language interpreters as well. That means I can launch e.g. Python from within emacs and runs chunks of code or the entire file I am editing. &lt;/p&gt;
+&lt;p&gt;I can warmly recommend reading &lt;a href="http://deep.syminet.com/emacside.html"&gt;Emacs as you IDE&lt;/a&gt;, which basically contains all you need to get started. It also gives you an idea about just how flexible and extensible emacs is.&lt;/p&gt;
+&lt;h2&gt;Debugging&lt;/h2&gt;
+&lt;p&gt;Disclaimer: I've mainly worked with C++ but I believe the following experience translate to a lot of programming languages. &lt;/p&gt;
+&lt;p&gt;Emacs has the slightly pompously named Grand Unified Debugger, which basically is an interface between many command line debuggers and the emacs editor. What it means to me is that I can launch gdb from within emacs and leverage the power of command line gdb while following the code in the editor.&lt;/p&gt;
+&lt;p&gt;It is in fact also very easy to use. To invoke gdb:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;M-x gdb
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;This asks you how to run gdb. By default the annotate=3 is given, which I believe is necessary for the interaction with emacs. After that, simply enter the path of the binary you have compiled from your code, press enter and watch emacs purr. This gives you a split screen window with gdb on one side and some code on the other side. Gdb commands must be entered in the gdb window, and that can only be interacted with while the code is not running. Make sure to hit C-c C-c to interrupt the code execution to enable gdb interaction (set breakpoints etc.).&lt;/p&gt;
+&lt;p&gt;The following commands should suffice to be able to mimic most modern IDEs, listed in the order you're likely to need it.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align="left"&gt;Command&lt;/th&gt;
+&lt;th align="left"&gt;Result&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;r&lt;/td&gt;
+&lt;td align="left"&gt;Run program&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;C-c C-c&lt;/td&gt;
+&lt;td align="left"&gt;Halt program execution&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;C-x SPACE&lt;/td&gt;
+&lt;td align="left"&gt;Insert breakpoint (from source buffer, program execution must be halted)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;delete &lt;em&gt;n&lt;/em&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Delete breakpoint number &lt;em&gt;n&lt;/em&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;delete&lt;/td&gt;
+&lt;td align="left"&gt;Delete all breakpoints&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;n&lt;/td&gt;
+&lt;td align="left"&gt;Next line&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;s&lt;/td&gt;
+&lt;td align="left"&gt;Step into&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;f&lt;/td&gt;
+&lt;td align="left"&gt;Finish current function&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;c&lt;/td&gt;
+&lt;td align="left"&gt;Continue until next breakpoint&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;p&lt;/td&gt;
+&lt;td align="left"&gt;Print variable&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;bt&lt;/td&gt;
+&lt;td align="left"&gt;Print current stack backtrace&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;set args &lt;em&gt;args&lt;/em&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Pass &lt;em&gt;args&lt;/em&gt; as arguments to the command&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;set args&lt;/td&gt;
+&lt;td align="left"&gt;Clear arguments&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;condition &lt;em&gt;n&lt;/em&gt; &lt;em&gt;cond&lt;/em&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Set a condition to breakpoint &lt;em&gt;n&lt;/em&gt;, e.g. i==4 or name=="Petter"&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;condition &lt;em&gt;n&lt;/em&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Remove condition on breakpoint &lt;em&gt;n&lt;/em&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Pretty printing&lt;/h2&gt;
+&lt;p&gt;Thus far, we've only covered normal gdb printing, and for C++ this is not very useful. For example, trying to print a string will give you the &lt;em&gt;memory address&lt;/em&gt; of that string. So we really need to crank up it's usefulness.&lt;/p&gt;
+&lt;p&gt;Such a shortcoming really puts gdb far behind the competition, but fortunately enough people use gdb that this has been fixed. Download &lt;a href="http://quickgit.kde.org/?p=kdevelop.git&amp;amp;a=blob_plain&amp;amp;h=43e7be3023451410cd984de96a5c0e6445648cf4&amp;amp;hb=1d0811b4cfa15a19f1bfce983a16519a8f577fb5&amp;amp;f=debuggers/gdb/printers/qt4.py"&gt;this script&lt;/a&gt; and save it in a suitable location. In you home directory, put the following in .gdbinit&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;python&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;sys&lt;/span&gt;
+
+&lt;span class="n"&gt;sys&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;insert&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;/suitable/location&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;qt4&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;register_qt4_printers&lt;/span&gt;
+&lt;span class="n"&gt;register_qt4_printers&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;None&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="n"&gt;end&lt;/span&gt;
+&lt;span class="nb"&gt;set&lt;/span&gt; &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="n"&gt;pretty&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;I was truly impressed with that scripts, because it would even print some custom datatypes that we have in the codebase we use at work. &lt;/p&gt;
+&lt;h2&gt;Using GUD&lt;/h2&gt;
+&lt;p&gt;The Grand Unified Debugger has some useful tools too. Truth to be told, I've only used the stack window which helps me move up the callstack to see how my program got to the state it is in right now. Just open the GUD menu in emacs and see what it can do for you!&lt;/p&gt;
+&lt;h2&gt;Slow stepping?&lt;/h2&gt;
+&lt;p&gt;I don't know how prevalent this bug is, but should you experience extremely slow function stepping in gdb, setting the following environment variable might help you:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;LD_BIND_NOW&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;1
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="emacs"></category><category term="programming"></category></entry></feed>
