@@ -1,23 +1,20 @@
---- 
-title: Emacs, gdb and pretty printing
-tags: ['emacs', 'programming']
-menuitem: programming
-created_at: 15 May 2012
-comments: "yes"
-summary: "I think everyone and his dog should start using emacs as their main text editor. Because it really is that good."
----
+Title: Emacs, gdb and pretty printing
+Tags: emacs, programming
+Date: 2012-01-01
+Summary: How to use Emacs as a C++ debugger
+
 
 Emacs, gdb and pretty printing
 =========================
 
-I've recently discovered that there truly exists one IDE to rule them all. And sorry Vi fans, it is emacs. 
+If you enjoy using Emacs for your C++ coding needs, you might want to know how to use it as a full fledged, powerful C++ debugger
 
 The editor
 ----------
 
 The emacs editor is based on the idea that you can accomplish anything with the keyboard. While I do find that most IDE actually *support* the use of the keyboard through shortcuts, emacs actually *forces* you to learn the shortcuts and thus making you (at least me) a more efficient code editor.
 
-It also handles identation very gracefully. Entering a tab character from *anywhere on the line* idents the whole line to the appropriate place. I've never seen any other editor do that, and while coding I've never missed the opportunity to insert a tab character somewhere in the line.
+It also handles indentation very gracefully. Entering a tab character from *anywhere on the line* idents the whole line to the appropriate place. I've never seen any other editor do that, and while coding I've never missed the opportunity to insert a tab character somewhere in the line.
 
 I've yet to discover a coding style that emacs does not recognize out of the box, so I've never fussed with setting up syntax highlighting or identation. Emacs can also interact with a lot of language interpreters as well. That means I can launch e.g. Python from within emacs and runs chunks of code or the entire file I am editing. 
 
@@ -32,9 +29,8 @@ Emacs has the slightly pompously named Grand Unified Debugger, which basically i
 
 It is in fact also very easy to use. To invoke gdb:
 
-<% highlight :text do %>
-M-x gdb
-<% end %>
+	:::bash
+	M-x gdb
 
 This asks you how to run gdb. By default the annotate=3 is given, which I believe is necessary for the interaction with emacs. After that, simply enter the path of the binary you have compiled from your code, press enter and watch emacs purr. This gives you a split screen window with gdb on one side and some code on the other side. Gdb commands must be entered in the gdb window, and that can only be interacted with while the code is not running. Make sure to hit C-c C-c to interrupt the code execution to enable gdb interaction (set breakpoints etc.).
 
@@ -64,17 +60,16 @@ Thus far, we've only covered normal gdb printing, and for C++ this is not very u
 
 Such a shortcoming really puts gdb far behind the competition, but fortunately enough people use gdb that this has been fixed. Download [this script](http://quickgit.kde.org/?p=kdevelop.git&a=blob_plain&h=43e7be3023451410cd984de96a5c0e6445648cf4&hb=1d0811b4cfa15a19f1bfce983a16519a8f577fb5&f=debuggers/gdb/printers/qt4.py) and save it in a suitable location. In you home directory, put the following in .gdbinit
 
-<% highlight :text do %>
-python
-import sys
+	:::python
+	python
+	import sys
 
-sys.path.insert(0, '/suitable/location')
-from qt4 import register_qt4_printers
-register_qt4_printers (None)
+	sys.path.insert(0, '/suitable/location')
+	from qt4 import register_qt4_printers
+	register_qt4_printers (None)
 
-end
-set print pretty 1
-<% end %>
+	end
+	set print pretty 1
 
 I was truly impressed with that scripts, because it would even print some custom datatypes that we have in the codebase we use at work. 
 
@@ -87,6 +82,6 @@ Slow stepping?
 
 I don't know how prevalent this bug is, but should you experience extremely slow function stepping in gdb, setting the following environment variable might help you:
 
-<% highlight :text do %>
-LD_BIND_NOW=1
-<% end %>
+	:::bash
+	LD_BIND_NOW=1
+
