@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
         <meta charset="utf-8" />
-        <title>A Pelican Blog - emacs</title>
+        <title>pK corner - emacs</title>
         <link rel="stylesheet" href="/theme/css/main.css" />
-        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="A Pelican Blog Atom Feed" />
 
         <!--[if IE]>
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -13,7 +12,7 @@
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="/">A Pelican Blog </a></h1>
+                <h1><a href="/">pK corner </a></h1>
                 <nav><ul>
                     <li><a href="/category/misc.html">misc</a></li>
                     <li><a href="/category/programming.html">programming</a></li>
@@ -22,132 +21,71 @@
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="/emacs-gdb-and-pretty-printing.html">Emacs, gdb and pretty printing</a></h1>
+                    <h1 class="entry-title"><a href="/how-to-read-email-in-emacs.html">How to read email in Emacs</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2012-06-07T00:00:00">
+                Thu 07 June 2012
+        </abbr>
+
+        <address class="vcard author">
+                By <a class="url fn" href="/author/petter-moe-kvalvaag.html">Petter Moe Kvalvaag</a>
+        </address>
+<p>In <a href="/category/programming.html">programming</a>. </p>
+<p>tags: <a href="/tag/emacs.html">emacs</a><a href="/tag/email.html">email</a><a href="/tag/lisp.html">lisp</a><a href="/tag/terminal.html">terminal</a></p>
+</footer><!-- /.post-info --><h1>Emacs multi-term</h1>
+<p>First of all you will need to familiarize yourself with the multi-term terminal package for emacs. It is very simple to install, just follow the steps at the <a href="http://emacswiki.org/emacs/MultiTerm">emacs wiki</a>. </p>
+<p>To start off, open emacs, press M-x (emacs for Alt+x on most systems), enter 'multi-term' and see the terminal window open. This is a fully capable terminal that can run most command line application. We will run alpine, but the so inclined can of course run mutt or any other command line email client.</p>
+<h2>Configure multi-term for alpine</h2>
+<p>There is one big catch with running alpine within emacs; sending an email requires you to press Ctrl-x, which is going to be interpreted as an emacs command rather than an alpine command.</p>
+<p>Emacs does facilitate customizing new keybindings (pretty much the idea behind emacs actually), so we will make a new function that sends the system character "C-x" to the terminal window. To make sure this is available in terminal mode we will put the new functions inside the multi-term.el file you just downloaded. Browse to the section where multi-term.el defines it's keybindings and add the last line with the pinesend keybinding. </p>
+<div class="highlight"><pre><span class="p">(</span><span class="n">defcustom</span> <span class="n">term</span><span class="o">-</span><span class="nb">bind</span><span class="o">-</span><span class="n">key</span><span class="o">-</span><span class="n">alist</span>
+  <span class="err">&#39;</span><span class="p">(</span>
+    <span class="p">(</span><span class="s">&quot;C-c C-c&quot;</span> <span class="o">.</span> <span class="n">term</span><span class="o">-</span><span class="n">interrupt</span><span class="o">-</span><span class="n">subjob</span><span class="p">)</span>
+    <span class="p">(</span><span class="s">&quot;C-c x&quot;</span>   <span class="o">.</span> <span class="n">multi</span><span class="o">-</span><span class="n">term</span><span class="o">-</span><span class="n">pinesend</span><span class="p">)</span>
+</pre></div>
+
+
+<p>This binds the key combination Ctrl-c x to the funtion multi-term-pinesend. This function does of course not exist yet, so we will create it at the bottom of the file, after all the original function definitions take place.</p>
+<div class="highlight"><pre><span class="p">(</span><span class="n">defun</span> <span class="n">multi</span><span class="o">-</span><span class="n">term</span><span class="o">-</span><span class="n">pinesend</span> <span class="p">()</span>
+  <span class="s">&quot;Send C-x to send pine email&quot;</span>
+    <span class="p">(</span><span class="n">interactive</span><span class="p">)</span>
+    <span class="p">(</span><span class="n">term</span><span class="o">-</span><span class="nb">send</span><span class="o">-</span><span class="n">raw</span><span class="o">-</span><span class="n">string</span> <span class="s">&quot;\C-x&quot;</span><span class="p">))</span>
+</pre></div><p>There are <a href="/how-to-read-email-in-emacs.html#disqus_thread">comments</a>.</p>                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/emacs-gdb-and-pretty-printing.html" rel="bookmark"
+                           title="Permalink to Emacs, gdb and pretty printing">Emacs, gdb and pretty printing</a></h1>
+                </header>
+
+                <div class="entry-content">
 <footer class="post-info">
         <abbr class="published" title="2012-01-01T00:00:00">
                 Sun 01 January 2012
         </abbr>
 
+        <address class="vcard author">
+                By <a class="url fn" href="/author/petter-moe-kvalvaag.html">Petter Moe Kvalvaag</a>
+        </address>
 <p>In <a href="/category/programming.html">programming</a>. </p>
 <p>tags: <a href="/tag/emacs.html">emacs</a><a href="/tag/programming.html">programming</a></p>
-</footer><!-- /.post-info --><h1>Emacs, gdb and pretty printing</h1>
-<p>If you enjoy using Emacs for your C++ coding needs, you might want to know how to use it as a full fledged, powerful C++ debugger</p>
-<h2>The editor</h2>
-<p>The emacs editor is based on the idea that you can accomplish anything with the keyboard. While I do find that most IDE actually <em>support</em> the use of the keyboard through shortcuts, emacs actually <em>forces</em> you to learn the shortcuts and thus making you (at least me) a more efficient code editor.</p>
-<p>It also handles indentation very gracefully. Entering a tab character from <em>anywhere on the line</em> idents the whole line to the appropriate place. I've never seen any other editor do that, and while coding I've never missed the opportunity to insert a tab character somewhere in the line.</p>
-<p>I've yet to discover a coding style that emacs does not recognize out of the box, so I've never fussed with setting up syntax highlighting or identation. Emacs can also interact with a lot of language interpreters as well. That means I can launch e.g. Python from within emacs and runs chunks of code or the entire file I am editing. </p>
-<p>I can warmly recommend reading <a href="http://deep.syminet.com/emacside.html">Emacs as you IDE</a>, which basically contains all you need to get started. It also gives you an idea about just how flexible and extensible emacs is.</p>
-<h2>Debugging</h2>
-<p>Disclaimer: I've mainly worked with C++ but I believe the following experience translate to a lot of programming languages. </p>
-<p>Emacs has the slightly pompously named Grand Unified Debugger, which basically is an interface between many command line debuggers and the emacs editor. What it means to me is that I can launch gdb from within emacs and leverage the power of command line gdb while following the code in the editor.</p>
-<p>It is in fact also very easy to use. To invoke gdb:</p>
-<div class="highlight"><pre>M-x gdb
-</pre></div>
-
-
-<p>This asks you how to run gdb. By default the annotate=3 is given, which I believe is necessary for the interaction with emacs. After that, simply enter the path of the binary you have compiled from your code, press enter and watch emacs purr. This gives you a split screen window with gdb on one side and some code on the other side. Gdb commands must be entered in the gdb window, and that can only be interacted with while the code is not running. Make sure to hit C-c C-c to interrupt the code execution to enable gdb interaction (set breakpoints etc.).</p>
-<p>The following commands should suffice to be able to mimic most modern IDEs, listed in the order you're likely to need it.</p>
-<table>
-<thead>
-<tr>
-<th align="left">Command</th>
-<th align="left">Result</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">r</td>
-<td align="left">Run program</td>
-</tr>
-<tr>
-<td align="left">C-c C-c</td>
-<td align="left">Halt program execution</td>
-</tr>
-<tr>
-<td align="left">C-x SPACE</td>
-<td align="left">Insert breakpoint (from source buffer, program execution must be halted)</td>
-</tr>
-<tr>
-<td align="left">delete <em>n</em></td>
-<td align="left">Delete breakpoint number <em>n</em></td>
-</tr>
-<tr>
-<td align="left">delete</td>
-<td align="left">Delete all breakpoints</td>
-</tr>
-<tr>
-<td align="left">n</td>
-<td align="left">Next line</td>
-</tr>
-<tr>
-<td align="left">s</td>
-<td align="left">Step into</td>
-</tr>
-<tr>
-<td align="left">f</td>
-<td align="left">Finish current function</td>
-</tr>
-<tr>
-<td align="left">c</td>
-<td align="left">Continue until next breakpoint</td>
-</tr>
-<tr>
-<td align="left">p</td>
-<td align="left">Print variable</td>
-</tr>
-<tr>
-<td align="left">bt</td>
-<td align="left">Print current stack backtrace</td>
-</tr>
-<tr>
-<td align="left">set args <em>args</em></td>
-<td align="left">Pass <em>args</em> as arguments to the command</td>
-</tr>
-<tr>
-<td align="left">set args</td>
-<td align="left">Clear arguments</td>
-</tr>
-<tr>
-<td align="left">condition <em>n</em> <em>cond</em></td>
-<td align="left">Set a condition to breakpoint <em>n</em>, e.g. i==4 or name=="Petter"</td>
-</tr>
-<tr>
-<td align="left">condition <em>n</em></td>
-<td align="left">Remove condition on breakpoint <em>n</em></td>
-</tr>
-</tbody>
-</table>
-<h2>Pretty printing</h2>
-<p>Thus far, we've only covered normal gdb printing, and for C++ this is not very useful. For example, trying to print a string will give you the <em>memory address</em> of that string. So we really need to crank up it's usefulness.</p>
-<p>Such a shortcoming really puts gdb far behind the competition, but fortunately enough people use gdb that this has been fixed. Download <a href="http://quickgit.kde.org/?p=kdevelop.git&amp;a=blob_plain&amp;h=43e7be3023451410cd984de96a5c0e6445648cf4&amp;hb=1d0811b4cfa15a19f1bfce983a16519a8f577fb5&amp;f=debuggers/gdb/printers/qt4.py">this script</a> and save it in a suitable location. In you home directory, put the following in .gdbinit</p>
-<div class="highlight"><pre><span class="n">python</span>
-<span class="kn">import</span> <span class="nn">sys</span>
-
-<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s">&#39;/suitable/location&#39;</span><span class="p">)</span>
-<span class="kn">from</span> <span class="nn">qt4</span> <span class="kn">import</span> <span class="n">register_qt4_printers</span>
-<span class="n">register_qt4_printers</span> <span class="p">(</span><span class="bp">None</span><span class="p">)</span>
-
-<span class="n">end</span>
-<span class="nb">set</span> <span class="k">print</span> <span class="n">pretty</span> <span class="mi">1</span>
-</pre></div>
-
-
-<p>I was truly impressed with that scripts, because it would even print some custom datatypes that we have in the codebase we use at work. </p>
-<h2>Using GUD</h2>
-<p>The Grand Unified Debugger has some useful tools too. Truth to be told, I've only used the stack window which helps me move up the callstack to see how my program got to the state it is in right now. Just open the GUD menu in emacs and see what it can do for you!</p>
-<h2>Slow stepping?</h2>
-<p>I don't know how prevalent this bug is, but should you experience extremely slow function stepping in gdb, setting the following environment variable might help you:</p>
-<div class="highlight"><pre><span class="nv">LD_BIND_NOW</span><span class="o">=</span>1
-</pre></div>                </article>
-            </aside><!-- /#featured -->
+</footer><!-- /.post-info -->                <p>How to use Emacs as a C++ debugger</p>
+                <a class="readmore" href="/emacs-gdb-and-pretty-printing.html">read more</a>
+<p>There are <a href="/emacs-gdb-and-pretty-printing.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
             </ol><!-- /#posts-list -->
             </section><!-- /#content -->
         <section id="extras" class="body">
                 <div class="social">
                         <h2>social</h2>
                         <ul>
-                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
 
+                            <li><a href="http://www.twitter.com/pettermk">twitter</a></li>
                         </ul>
                 </div><!-- /.social -->
         </section><!-- /#extras -->
@@ -160,5 +98,14 @@
                 <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
         </footer><!-- /#contentinfo -->
 
+<script type="text/javascript">
+    var disqus_shortname = 'petterssite';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
 </body>
 </html>
