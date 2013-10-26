@@ -17,18 +17,17 @@ There is one big catch with running alpine within emacs; sending an email requir
 
 Emacs does facilitate customizing new keybindings (pretty much the idea behind emacs actually), so we will make a new function that sends the system character "C-x" to the terminal window. To make sure this is available in terminal mode we will put the new functions inside the multi-term.el file you just downloaded. Browse to the section where multi-term.el defines it's keybindings and add the last line with the pinesend keybinding. 
 
-
-(defcustom term-bind-key-alist
-'(
-("C-c C-c" . term-interrupt-subjob)
-("C-c x"   . multi-term-pinesend)
-<% end %>
+	:::elisp
+    (defcustom term-bind-key-alist
+	  '(
+        ("C-c C-c" . term-interrupt-subjob)
+        ("C-c x"   . multi-term-pinesend)
 
 This binds the key combination Ctrl-c x to the funtion multi-term-pinesend. This function does of course not exist yet, so we will create it at the bottom of the file, after all the original function definitions take place.
 
-<%highlight :text do %>
-(defun multi-term-pinesend ()
-  "Send C-x to send pine email"
-  (interactive)
-  (term-send-raw-string "\C-x"))
-<% end %>
+	:::elisp
+    (defun multi-term-pinesend ()
+      "Send C-x to send pine email"
+        (interactive)
+	    (term-send-raw-string "\C-x"))
+
